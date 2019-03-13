@@ -4,8 +4,9 @@
             <div class="col-md-4 probootstrap-animate">
               <div class="probootstrap-footer-widget">
                 <h3>About Us</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate ab minus illum quaerat maxime inventore Ea consequatur consectetur hic provident dolor ab aliquam eveniet alias</p>
-                <ul class="probootstrap-footer-social">
+                <p>Spica Global Arts mission is to promote Indian classical art form in San Diego and suppor charitable organizations worldwide.
+              Our vision is to provide an opportunity for the future generation to be able to stay connected to their rich cultural heritage</p>
+              <ul class="probootstrap-footer-social">
                   <li><a href="#"><i class="icon-twitter"></i></a></li>
                   <li><a href="#"><i class="icon-facebook"></i></a></li>
                   <li><a href="#"><i class="icon-github"></i></a></li>
@@ -20,8 +21,8 @@
               <div class="probootstrap-footer-widget">
                 <h3>Contact Info</h3>
                 <ul class="probootstrap-contact-info">
-                  <li><i class="icon-location2"></i> <span>198 West 21th Street, Suite 721 New York NY 10016</span></li>
-                  <li><i class="icon-mail"></i><span><a href="https://uicookies.com/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="6900070f06290d0604080007470a0604">[email&#160;protected]</a></span></li>
+                  <li><i class="icon-location2"></i> <span>Spica Global Arts  14805 ferris Creek Lane San Diego CA 92128</span></li>
+                  <li><i class="icon-mail"></i><span> spicaglobalarts.com</span></li>
                   <li><i class="icon-phone2"></i><span>+123 456 7890</span></li>
                 </ul>
                 
@@ -44,13 +45,17 @@
         <div class="probootstrap-copyright">
           <div class="container">
             <div class="row">
-              <div class="col-md-8 text-left">
-                <p>&copy; 2017 <a href="https://uicookies.com/">uiCookies:Charity</a>. All Rights Reserved. Designed &amp; Developed with <i class="icon icon-heart"></i> by <a href="https://uicookies.com/">uicookies.com</a></p>
-              </div>
-              <div class="col-md-4 probootstrap-back-to-top">
-                <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
-              </div>
+                <div class="col-md-6">                                  
+                    <input type="text" class="form-control" id="name" name="name">                  
+                </div>
+                <div class="col-md-3">
+                    <button type="button" class="btn btn-success">Subscribe</button>                                              
+                </div>
+                <div class="col-md-3">
+                    <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
+                </div>
             </div>
+          
           </div>
         </div>
       </footer>

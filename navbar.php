@@ -15,7 +15,7 @@
             <ul class="nav navbar-nav navbar-right">
               <li class="active"><a href="index-2.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="news.html">News</a></li>
+              <li><a href="news.html">Events</a></li>
               <li><a href="causes.html">Causes</a></li>
               <li class="dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
