@@ -1,18 +1,23 @@
 function subscribeMail(){
     var subscriberEmail = $('#subscriberEmail').val();
-    $.ajax({
-        url:'./src/subscribeMail.php',
-        type:'POST',
-        data:{subscriberEmail:subscriberEmail},
-        dataType:'json',
-        success:function(response){
-            alert(response.msg);
-        }
-    });
+    if(subscriberEmail==""){
+        alert('Enter Email Id');
+    }else{
+        $.ajax({
+            url:'admin/src/subscribeMail.php',
+            type:'POST',
+            data:{subscriberEmail:subscriberEmail},
+            dataType:'json',
+            success:function(response){
+                $('#subscriberEmail').val('');
+                alert(response.msg);
+            }
+        });
+    }
 }
 function displaySubscriber(){
     $.ajax({
-        url:'./src/displaySubscriber.php',
+        url:'admin/src/displaySubscriber.php',
         type:'GET',
         dataType:'json',
         success:function(response){

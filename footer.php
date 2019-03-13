@@ -46,10 +46,10 @@
           <div class="container">
             <div class="row">
                 <div class="col-md-6">                                  
-                    <input type="text" class="form-control" id="name" name="name">                  
+                    <input type="email" class="form-control" id="subscriberEmail" name="subscriberEmail" placeholder="Enter An Email Id for Subscribe">                  
                 </div>
                 <div class="col-md-3">
-                    <button type="button" class="btn btn-success">Subscribe</button>                                              
+                    <button type="button" class="btn btn-success" onclick="subscribeMail()">Subscribe</button>                                              
                 </div>
                 <div class="col-md-3">
                     <p><a href="#" class="js-backtotop">Back to top <i class="icon-arrow-long-up"></i></a></p>
@@ -59,3 +59,4 @@
           </div>
         </div>
       </footer>
+      <script src="admin/jsmain/subscribeMail.js"></script>
