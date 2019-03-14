@@ -1,17 +1,19 @@
-function AddContacts(){
+$('#contactForm').on('submit',function(e){
+    e.preventDefault();
     var name = $('#name').val();
     var emailId = $('#emailId').val();
-    var ContactNumber = $('#ContactNumber').val();
+    var ContactNumber = $('#contactNumber').val();
+    var message = $('#message').val();
     $.ajax({
         url:'admin/src/addContacts.php',
         type:'POST',
-        data:{name:name,emailId:emailId,ContactNumber:ContactNumber},
+        data:{name:name,emailId:emailId,ContactNumber:ContactNumber,message:message},
         dataType:'json',
         success:function(response){
             alert(response.msg);
         }
     });
-}
+});
 function displayContacts(){
     $.ajax({
         url:'admin/src/displayContacts.php',
