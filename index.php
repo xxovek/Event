@@ -355,7 +355,8 @@
 
      <?php include 'footer.php';?>
 
-    <script data-cfasync="false" src="https://uicookies.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/scripts.min.js"></script>
+    <!-- <script data-cfasync="false" src="https://uicookies.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
+    <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
     
