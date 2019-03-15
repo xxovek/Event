@@ -8,15 +8,16 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index-2.html" title="uiCookies:Enlight">Enlight</a>
+            <a class="navbar-brand" href="index.php" title="uiCookies:Enlight">Enlight</a>
           </div>
 
           <div id="navbar-collapse" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="index-2.html">Home</a></li>
-              <li><a href="about.html">About Us</a></li>
-              <li><a href="news.html">Events</a></li>
-              <li><a href="causes.html">Causes</a></li>
+              <li class="active"><a href="index.php">Home</a></li>
+              <li><a href="about.php">About Us</a></li>
+              <li><a href="events.php">Events</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.php">Contact us</a></li>
               <li class="dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
                 <ul class="dropdown-menu">
