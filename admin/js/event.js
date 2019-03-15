@@ -1,4 +1,3 @@
-
 var form_validation = function() {
     var e = function() {
             jQuery(".form-valide").validate({
