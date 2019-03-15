@@ -1,15 +1,15 @@
-<?php 
+<?php
 require '../config/connection.php';
 $sponserName = $_POST['sponserName'];
 $sponserDesc = $_POST['sponserDesc'];
 $response = [];
-if(!isset($_FILES["imgname"]["type"])){
+if(!isset($_FILES["sponserprofile"]["type"])){
     $imgname = 'sponsers/sponser.jpg';
   }
   else {
-    $imgname = $_FILES["imgname"]["name"];
-    $sourcePath = $_FILES['imgname']['tmp_name']; // Storing source path of the file in a variable
-    $targetPath = "sponsers/".$_FILES['imgname']['name']; // Target path where file is to be stored
+    $imgname = $_FILES["sponserprofile"]["name"];
+    $sourcePath = $_FILES['sponserprofile']['tmp_name']; // Storing source path of the file in a variable
+    $targetPath = "../sponsers/".$_FILES['sponserprofile']['name']; // Target path where file is to be stored
     move_uploaded_file($sourcePath,$targetPath) ; // Moving Uploaded file
   }
 $sql = "INSERT INTO Sponsers(sponserName,sponserDesc,sponserProfile) VALUES('$sponserName','$sponserDesc','$imgname')";

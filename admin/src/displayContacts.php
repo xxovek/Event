@@ -1,4 +1,4 @@
-<?php 
+<?php
 require('../config/connection.php');
 $response = [];
 $sql = "SELECT * FROM Contacts";
@@ -11,7 +11,7 @@ if($result = mysqli_query($con,$sql)){
                 'emailId' =>$row['emailId'],
                 'ContactNumber' => $row['ContactNumber'],
                 'created_at' => $row['created_at']
-            ]); 
+            ]);
         }
     }else{
         $response['msg'] = 'There are no contacts Available';
