@@ -30,7 +30,7 @@
         <div class="container">
           <div class="row mb40">
             <div class="col-md-6 col-md-push-6 probootstrap-animate">
-              <p><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+              <p><img src="img/3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
             </div>
             <div class="col-md-5 col-md-pull-6 probootstrap-animate">
               <h2>Our Story</h2>
@@ -42,7 +42,7 @@
 
           <div class="row">
             <div class="col-md-6 probootstrap-animate">
-              <p><img src="img/img_sq_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+              <p><img src="img/6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
             </div>
             <div class="col-md-5 col-md-push-1 probootstrap-animate">
               <h2>Our Mission</h2>
@@ -66,7 +66,7 @@
           <div class="row">
             <div class="col-md-4 col-sm-6 col-xs-6 probootstrap-animate">
               <a href="#" class="probootstrap-team">
-                <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                <img src="img/8.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 <div class="probootstrap-team-info">
                   <h3>Manisha Patil <span class="position">CEO</span><small>A software engineer by profession. <p>
                       She is very passionate about classical Indian art forms.Her motivation to create this organization is to make a difference in the community and bring  the community together to support such a valuable cause.</p> </small></h3>
@@ -75,7 +75,7 @@
             </div>
             <div class="col-md-4 col-sm-6 col-xs-6 probootstrap-animate">
               <a href="#" class="probootstrap-team">
-                <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                <img src="img/8.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 <div class="probootstrap-team-info">
                   <h3>Trupti Tawde Ambre <span class="position">Secretary</span><small>She has a background in Mass Media with a specialization in Mass Communication <p>
                   She was an Executive producer in Zee Marathi and Associate prouducer in public service broadcast . She intends to bring her expertise to Spica Global Arts . Being raised in a cultural rich environment her she was motivated to help spread the richness of Indian classical Art form in San Diego</p> </small></h3>
@@ -87,7 +87,7 @@
 
             <div class="col-md-4 col-sm-6 col-xs-6 probootstrap-animate">
               <a href="#" class="probootstrap-team">
-                <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                <img src="img/8.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 <div class="probootstrap-team-info">
                   <h3>Saleena Kench <span class="position">President</span><small>Doctor of Physical Therapy by profession<p>
                   She has always been a very ardent follower of Indian Classical music. Her vision is to propogate Indian classical music in San Diego. Her intent for founding Spica Global Arts was to provide a platform for such a rich cultural heritage.</p> </small></h3>
@@ -103,7 +103,7 @@
       <section class="probootstrap-half">
         <div class="image">
           <div class="image-bg">
-            <img src="img/img_sq_5_big.jpg" alt="Free Bootstrap Template by uicookies.com">
+            <img src="img/5.jpg" alt="Free Bootstrap Template by uicookies.com">
           </div>
         </div>
         <div class="text">

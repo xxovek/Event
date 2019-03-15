@@ -22,7 +22,7 @@
 
     <?php include 'navbar.php';?>
       
-      <section class="probootstrap-hero" style="background-image: url(img/hero_bg_bw_1.jpg)"  data-stellar-background-ratio="0.5">
+      <section class="probootstrap-hero" style="background-image: url(img/3.jpg)"  data-stellar-background-ratio="1.5">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -75,7 +75,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section-heading probootstrap-animate" data-animate-effect="fadeIn">
-              <h2>Most Popular Causes</h2>
+              <h2>Upcoming Conserts</h2>
               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
             </div>
           </div>
@@ -83,7 +83,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block probootstrap-cause">
                 <figure>
-                  <img src="img/img_sm_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
@@ -106,7 +106,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
                 <figure>
-                  <img src="img/img_sm_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
@@ -130,7 +130,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
                 <figure>
-                  <img src="img/img_sm_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
@@ -160,11 +160,11 @@
       </section>
 
       
-      <section class="probootstrap-section probootstrap-bg probootstrap-section-dark" style="background-image: url(img/hero_bg_bw_1.jpg)"  data-stellar-background-ratio="0.5">
+      <section class="probootstrap-section probootstrap-bg probootstrap-section-dark" style="background-image: url(img/9.jpg)"  data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section-heading probootstrap-animate" data-animate-effect="fadeIn">
-              <h2>Latest Donations</h2>
+              <h2>Our Sponsers</h2>
               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
             </div>
           </div>
@@ -172,7 +172,7 @@
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Linda Reyez</h3>
@@ -183,7 +183,7 @@
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/11.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Chris Worth</h3>
@@ -194,7 +194,7 @@
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/12.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Janet Morris</h3>
@@ -206,7 +206,7 @@
 
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Jessa Sy</h3>
@@ -266,7 +266,7 @@
       <section class="probootstrap-half">
         <div class="image">
           <div class="image-bg">
-            <img src="img/img_sq_5_big.jpg" alt="Free Bootstrap Template by uicookies.com">
+            <img src="img/18.jpg" alt="Free Bootstrap Template by uicookies.com">
           </div>
         </div>
         <div class="text">
