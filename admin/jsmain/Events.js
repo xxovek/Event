@@ -52,3 +52,16 @@ function removeEvent(EventId){
         }
     });
 }
+function displayEventsOnSite(){
+    $.ajax({
+        url:'admin/src/displayEvents.php',
+        type:'POST',
+        dataType:'json',
+        success:function(response){
+            var count = response.length;
+            for(var i=0;i<count;i++){
+                
+            }
+        }
+    });
+}

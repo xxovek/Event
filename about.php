@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon"> 
+    <script src="js/jquery.min.js"></script>
   </head>
   <body>
     <?php include 'navbar.php';?>
@@ -33,7 +35,7 @@
               <p><img src="img/3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
             </div>
             <div class="col-md-5 col-md-pull-6 probootstrap-animate">
-              <h2>Our Story</h2>
+            <h2>Our Mission</h2>
               <p>Spica Global Arts mission is to promote Indian classical art form in San Diego and suppor charitable organizations worldwide.</p>
               <p>Our vision is to provide an opportunity for the future generation to be able to stay connected to their rich cultural heritage</p>
             </div>
@@ -45,7 +47,7 @@
               <p><img src="img/6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
             </div>
             <div class="col-md-5 col-md-push-1 probootstrap-animate">
-              <h2>Our Mission</h2>
+              <h2>Our Story</h2>
               <p>Spica Global Arts mission is to promote Indian classical art form in San Diego and suppor charitable organizations worldwide.</p>
               <p>Our vision is to provide an opportunity for the future generation to be able to stay connected to their rich cultural heritage</p>
              </div>
@@ -115,7 +117,6 @@
         </div>
       </section>
      <?php include 'footer.php';?>
-    <!-- <script data-cfasync="false" src="https://uicookies.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script> -->
    <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
