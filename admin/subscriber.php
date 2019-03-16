@@ -54,11 +54,12 @@
               </div>
               <div class="col-lg-12">
 
-              <table class="table table-stripped table-bordered" cellspacing="0" id="example1">
+              <table class="table table-stripped table-bordered" cellspacing="0" id="example1" style="text-align:center">
                   <thead>
                     <tr>
                       <th >Sr No</th>
-                      <th >Email</th>
+                      <th style="text-align: center;">Email</th>
+                      <th style="text-align: center;">Action</th>
                     </tr>
                   </thead>
                   <tbody id="tabledata"></tbody>

@@ -46,11 +46,11 @@
               <table class="table table-stripped table-bordered" cellspacing="0" id="example1">
                   <thead>
                     <tr>
-                      <th >Sr No</th>
-                      <th >Contact Name</th>
-                      <th >Email</th>
-                      <th >Contact Number</th>
-                      <th >Action</th>
+                      <th style="text-align: center;">Sr No</th>
+                      <th style="text-align: center;">Contact Name</th>
+                      <th style="text-align: center;">Email</th>
+                      <th style="text-align: center;">Contact Number</th>
+                      <th style="text-align: center;">Action</th>
                     </tr>
                   </thead>
                   <tbody id="tabledata"></tbody>

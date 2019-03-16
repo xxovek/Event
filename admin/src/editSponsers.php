@@ -1,8 +1,8 @@
-<?php 
+<?php
 require('../config/connection.php');
 $response = [];
 $sponserId = $_POST['sponserId'];
-$sql = "SELECT * FROM Sponsers WHERE SponserId = $spoonserId";
+$sql = "SELECT * FROM Sponsers WHERE SponserId = $sponserId";
 if($result = mysqli_query($con,$sql)){
     if(mysqli_num_rows($result)>0){
         $row=mysqli_fetch_array($result);

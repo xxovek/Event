@@ -4,7 +4,7 @@ $sponserName = $_POST['sponserName'];
 $sponserDesc = $_POST['sponserDesc'];
 $response = [];
 if(!isset($_FILES["sponserprofile"]["type"])){
-    $imgname = 'sponsers/sponser.jpg';
+    $imgname = '../sponsers/sponser.jpg';
   }
   else {
     $imgname = $_FILES["sponserprofile"]["name"];

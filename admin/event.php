@@ -51,53 +51,63 @@
 
               </div>
               <div class="row " id="eventmainform" style="display:none;">
-                  <div class="col-lg-12">
+                  <div class="col-lg-6">
                       <div class="card">
                           <div class="card-body">
                               <div class="form-validation">
-                                  <form class="form-valide"   method="post" enctype="multipart/form-data">
+                                  <form id="eventform"   method="post" enctype="multipart/form-data">
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Event Name <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
-                                              <input type="text" class="form-control" id="eventname" name="val-eventname" placeholder="Enter a Event Name..">
+                                              <input type="text" class="form-control" id="eventname" name="EventName" placeholder="Enter a Event Name..">
+                                              <span id="smeventname" style="float:right;"></span>
                                           </div>
                                       </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Event Date <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
-                                              <input type="date" class="form-control" id="eventdate" name="val-eventdate" placeholder="Enter a Event Date..">
+                                              <input type="date" class="form-control" id="eventdate" name="EventDate" placeholder="Enter a Event Date..">
+                                              <span id="smeventdate" style="float:right;"></span>
                                           </div>
                                       </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Event Time <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
-                                              <input type="time" class="form-control" id="eventtime" name="val-eventtime" placeholder="Enter a Event Time..">
+                                              <input type="time" class="form-control" id="eventtime" name="EventTime" placeholder="Enter a Event Time..">
+                                              <span id="smeventtime" style="float:right;"></span>
                                           </div>
                                       </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Description <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
-                                              <input  type="text" class="form-control" id="description" name="val-description" rows="6" cols="50" placeholder="Enter Description..">
+                                              <input  type="text" class="form-control" id="description" name="Description" rows="6" cols="50" placeholder="Enter Description..">
+                                              <span id="smdescription" style="float:right;"></span>
                                           </div>
                                       </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Venue <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
-                                              <input type="text" class="form-control" id="venue" name="val-venue"  placeholder="Enter Venue..">
+                                              <input type="text" class="form-control" id="venue" name="Venue"  placeholder="Enter Venue..">
+                                              <span id="smvenue" style="float:right;"></span>
                                           </div>
                                       </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Venue City <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
-                                              <input type="text" class="form-control" id="venuecity" name="val-venuecity"  placeholder="Enter Venue City..">
+                                              <input type="text" class="form-control" id="venuecity" name="VenueCity"  placeholder="Enter Venue City..">
+                                              <span id="smvenuecity" style="float:right;"></span>
                                           </div>
                                       </div>
                                       <div class="form-group row">
-                                          <div class="col-lg-6">
-                                          <label>Event Profile <span class="text-danger">*</span></label>
-                                              <input type="file"  id="eventprofile" name="val-eventprofile" accept="image/*" onchange="loadFile(event)" >
+
+                                          <label class="col-lg-4 col-form-label">Event Profile <span class="text-danger">*</span></label>
+                                           <div class="col-lg-6">
+                                              <input type="file"  id="eventprofile" name="eventprofile" accept="image/*" onchange="loadFile(event)" >
+                                              <span id="smeventprofile" style="float:right;"></span>
                                           </div>
-                                          <div class="col-lg-6">
+                                        </div>
+                                          <div class="form-group row" id="eveimg" style="display:none">
+                                          <div class="col-lg-12">
                                             <div class="form-group">
                                               <img src="" alt="" id="output" width="110px" height="110px">
                                             </div>
@@ -105,7 +115,8 @@
                                       </div>
 
                                       <div class="form-group row">
-                                          <div class="col-lg-8 ml-auto">
+                                          <div class="col-lg-4">
+                                                <button type="button" class="btn btn-success" onclick="cancelreset()">CANCEL</button>
                                               <button type="submit" class="btn btn-primary">SAVE</button>
                                           </div>
                                       </div>
@@ -117,7 +128,87 @@
                       </div>
                   </div>
               </div>
-                <div class="col-lg-12">
+              <div class="row " id="updateeventmainform" style="display:none;">
+                  <div class="col-lg-6">
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="form-validation">
+                                  <form id="ueventform"   method="post" enctype="multipart/form-data">
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Event Name <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input type="hidden" id="EventId" name="EventId"/>
+                                              <input type="text" class="form-control" id="ueventname" name="EventName" placeholder="Enter a Event Name..">
+                                              <span id="usmeventname" style="float:right;"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Event Date <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input type="date" class="form-control" id="ueventdate" name="EventDate" placeholder="Enter a Event Date..">
+                                              <span id="usmeventdate" style="float:right;"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Event Time <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input type="time" class="form-control" id="ueventtime" name="EventTime" placeholder="Enter a Event Time..">
+                                              <span id="usmeventtime" style="float:right;"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Description <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input  type="text" class="form-control" id="udescription" name="Description" rows="6" cols="50" placeholder="Enter Description..">
+                                              <span id="usmdescription" style="float:right;"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Venue <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input type="text" class="form-control" id="uvenue" name="Venue"  placeholder="Enter Venue..">
+                                              <span id="usmvenue" style="float:right;"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Venue City <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input type="text" class="form-control" id="uvenuecity" name="VenueCity"  placeholder="Enter Venue City..">
+                                              <span id="usmvenuecity" style="float:right;"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+
+                                          <label class="col-lg-4 col-form-label">Event Profile <span class="text-danger">*</span></label>
+                                           <div class="col-lg-6">
+                                              <input type="file"  id="ueventprofile" name="eventprofile" accept="image/*" onchange="loadFile1(event)" >
+                                              <span id="usmeventprofile" style="float:right;"></span>
+                                          </div>
+                                        </div>
+                                          <div class="form-group row">
+                                          <div class="col-lg-12">
+                                            <div class="form-group">
+                                              <img src="" alt="" id="output1" width="110px" height="110px">
+                                               <span id="updateimage"></span>
+                                            </div>
+                                          </div>
+                                      </div>
+
+                                      <div class="form-group row">
+                                          <div class="col-lg-4">
+                                                <button type="button" class="btn btn-success" onclick="cancelreset()">CANCEL</button>
+                                              <button type="submit" class="btn btn-primary">UPDATE</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+                <div class="col-lg-12" id="eventtable">
                     <div class="card">
               <div class="row">
 
@@ -133,7 +224,8 @@
                           <th >Event Description</th>
                           <th >Event Venue</th>
                           <th >Venue City</th>
-                          <th >Action</th>
+                          <th style="text-align: center;">Status</th>
+                          <th style="text-align: center;">Action</th>
                       </tr>
                     </thead>
                     <tbody id="tabledata"></tbody>
@@ -142,71 +234,6 @@
               </div>
               </div>
               </div>
-                <!-- Start Page Content -->
-                <!-- <div class="row">
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>568120</h2>
-                                    <p class="m-b-0">Total Revenue</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-shopping-cart f-s-40 color-success"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>1178</h2>
-                                    <p class="m-b-0">Sales</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>25</h2>
-                                    <p class="m-b-0">Stores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-user f-s-40 color-danger"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>847</h2>
-                                    <p class="m-b-0">Customer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-           <!-- <div class="row">
-						<div class="col-lg-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="year-calendar"></div>
-								</div>
-							</div>
-						</div>
-            </div> -->
-                <!-- End PAge Content -->
             </div>
         </div>
           <?php include "mainfooter.php"; ?>

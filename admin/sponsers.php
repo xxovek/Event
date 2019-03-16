@@ -57,7 +57,8 @@
                 </div>
                <div class="col-lg-4" >
                   <div class="form-group" style="float:right;padding:4%;">
-                   <button class="btn btn-success" onclick="btnaddsponsers();">Add Sponsers</button>
+
+                   <button class="btn btn-primary" onclick="btnaddsponsers();">Add Sponsers</button>
                   </div>
                 </div>
 
@@ -100,7 +101,8 @@
                                       </div>
 
                                       <div class="form-group row">
-                                          <div class="col-lg-8 ml-auto">
+                                          <div class="col-lg-4">
+                                                <button type="button" class="btn btn-success" onclick="cancelreset()">CANCEL</button>
                                               <button type="submit" class="btn btn-primary">SAVE</button>
                                           </div>
                                       </div>
@@ -111,8 +113,59 @@
                       </div>
                   </div>
               </div>
+              <div class="row " id="usponsermainform" style="display:none;">
+                  <div class="col-lg-6">
+                      <div class="card">
+                          <div class="card-body">
+                              <div class="form-validation">
+                                  <form id="usponserform"  method="post">
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Sponsers Name <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <input type="hidden" id="sponserId" name="sponserId"/>
+                                              <input type="text" class="form-control" id="usponsername" name="sponserName" placeholder="Enter a Sponsers Name..">
+                                              <span id="umsponsername" style="float:right"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
+                                          <label class="col-lg-4 col-form-label">Sponser Description <span class="text-danger">*</span></label>
+                                          <div class="col-lg-6">
+                                              <textarea class="form-control" id="usponserdesc" name="sponserDesc" rows="8" cols="120" placeholder="Enter a Sponser Description.."></textarea>
+                                              <span id="umsponserdesc" style="float:right"></span>
+                                          </div>
+                                      </div>
+                                      <div class="form-group row">
 
-              <div class="col-lg-12">
+                                          <label class="col-lg-4 col-form-label">Sponser Profile Image <span class="text-danger">*</span></label>
+                                           <div class="col-lg-6">
+                                              <input type="file"  id="usponserprofile" name="sponserprofile" accept="image/*" onchange="loadFile1(event)" >
+                                               <span id="umsponserimg" style="float:right"></span>
+                                          </div>
+
+
+
+                                      </div>
+                                      <div class="form-group row"  >
+                                         <div class="col-lg-6" >
+                                        <img src="" alt="" id="output1" width="110px" height="110px">
+                                         <span id="updateimage"></span>
+                                      </div>
+                                      </div>
+
+                                      <div class="form-group row">
+                                          <div class="col-lg-4">
+                                              <button type="button" class="btn btn-success" onclick="cancelreset()">CANCEL</button>
+                                              <button type="submit" class="btn btn-primary">UPDATE</button>
+                                          </div>
+                                      </div>
+                                  </form>
+                              </div>
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-12" id="sponsertable">
                   <div class="card">
             <div class="row">
 
@@ -121,12 +174,12 @@
               <table class="table table-stripped table-bordered" cellspacing="0" id="example1">
                   <thead>
                     <tr>
-                      <th >Sr No</th>
+                        <th >Sr No</th>
                         <th >Sponser Name</th>
                         <th >Sponser Description</th>
                         <th >Sponser Profile</th>
-                        <th >Status</th>
-
+                        <th style="text-align: center;">Status</th>
+                        <th style="text-align: center;">Action</th>
                     </tr>
                   </thead>
                   <tbody id="tabledata"></tbody>
