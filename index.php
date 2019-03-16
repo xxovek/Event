@@ -12,17 +12,16 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16"> 
+    <script src="js/jquery.min.js"></script>
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
     <![endif]-->
   </head>
   <body>
-
     <?php include 'navbar.php';?>
-      
-      <section class="probootstrap-hero" style="background-image: url(img/hero_bg_bw_1.jpg)"  data-stellar-background-ratio="0.5">
+      <section class="probootstrap-hero" style="background-image: url(img/3.jpg)"  data-stellar-background-ratio="1.5">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -70,12 +69,11 @@
           </div>
         </div>
       </section>
-
       <section class="probootstrap-section">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section-heading probootstrap-animate" data-animate-effect="fadeIn">
-              <h2>Most Popular Causes</h2>
+              <h2>Upcoming Conserts</h2>
               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
             </div>
           </div>
@@ -83,7 +81,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block probootstrap-cause">
                 <figure>
-                  <img src="img/img_sm_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
@@ -106,11 +104,11 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
                 <figure>
-                  <img src="img/img_sm_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
-                    <div class="progress-bar progress-bar-s2" data-percent="95"></div>
+                    <div class="progress-bar progress-bar-s2" data-percent="99"></div>
                   </div>
 
                   <div class="row mb30">
@@ -130,11 +128,11 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
                 <figure>
-                  <img src="img/img_sm_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
-                    <div class="progress-bar progress-bar-s2" data-percent="19"></div>
+                    <div class="progress-bar progress-bar-s2" data-percent="99"></div>
                   </div>
 
                   <div class="row mb30">
@@ -160,11 +158,11 @@
       </section>
 
       
-      <section class="probootstrap-section probootstrap-bg probootstrap-section-dark" style="background-image: url(img/hero_bg_bw_1.jpg)"  data-stellar-background-ratio="0.5">
+      <section class="probootstrap-section probootstrap-bg probootstrap-section-dark" style="background-image: url(img/9.jpg)"  data-stellar-background-ratio="0.5">
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section-heading probootstrap-animate" data-animate-effect="fadeIn">
-              <h2>Latest Donations</h2>
+              <h2>Our Sponsers</h2>
               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
             </div>
           </div>
@@ -172,7 +170,7 @@
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Linda Reyez</h3>
@@ -183,7 +181,7 @@
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/11.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Chris Worth</h3>
@@ -194,7 +192,7 @@
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/12.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Janet Morris</h3>
@@ -206,7 +204,7 @@
 
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
-                  <img src="img/person_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="text">
                   <h3>Jessa Sy</h3>
@@ -223,7 +221,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 text-center section-heading probootstrap-animate">
-              <h2>What People Says</h2>
+              <h2>Past Events</h2>
               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
             </div>
           </div>
@@ -234,7 +232,7 @@
 
                   <div class="probootstrap-testimony-wrap text-center">
                     <figure>
-                      <img src="img/person_1.jpg" alt="Free Bootstrap Template by uicookies.com">
+                      <img src="img/12.jpg" alt="Free Bootstrap Template by uicookies.com">
                     </figure>
                     <blockquote class="quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo; <cite class="author"> &mdash; <span>Mike Fisher</span></cite></blockquote>
                   </div>
@@ -243,15 +241,25 @@
                 <div class="item">
                   <div class="probootstrap-testimony-wrap text-center">
                     <figure>
-                      <img src="img/person_2.jpg" alt="Free Bootstrap Template by uicookies.com">
+                      <img src="img/13.jpg" alt="Free Bootstrap Template by uicookies.com">
                     </figure>
                     <blockquote class="quote">&ldquo;Creativity is just connecting things. When you ask creative people how they did something, they feel a little guilty because they didn’t really do it, they just saw something. It seemed obvious to them after a while.&rdquo; <cite class="author"> &mdash;<span>Jorge Smith</span></cite></blockquote>
                   </div>
                 </div>
                 <div class="item">
+
+<div class="probootstrap-testimony-wrap text-center">
+  <figure>
+    <img src="img/12.jpg" alt="Free Bootstrap Template by uicookies.com">
+  </figure>
+  <blockquote class="quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo; <cite class="author"> &mdash; <span>Mike Fisher</span></cite></blockquote>
+</div>
+
+</div>
+                <div class="item">
                   <div class="probootstrap-testimony-wrap text-center">
                     <figure>
-                      <img src="img/person_3.jpg" alt="Free Bootstrap Template by uicookies.com">
+                      <img src="img/14.jpg" alt="Free Bootstrap Template by uicookies.com">
                     </figure>
                     <blockquote class="quote">&ldquo;I think design would be better if designers were much more skeptical about its applications. If you believe in the potency of your craft, where you choose to dole it out is not something to take lightly.&rdquo; <cite class="author">&mdash; <span>Brandon White</span></cite></blockquote>
                   </div>
@@ -266,7 +274,7 @@
       <section class="probootstrap-half">
         <div class="image">
           <div class="image-bg">
-            <img src="img/img_sq_5_big.jpg" alt="Free Bootstrap Template by uicookies.com">
+            <img src="img/18.jpg" alt="Free Bootstrap Template by uicookies.com">
           </div>
         </div>
         <div class="text">
@@ -301,7 +309,7 @@
             </div>
             <div class="col-md-6 probootstrap-animate">
               <h3>About Us</h3>
-              <p><img src="img/img_sm_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+              <p><img src="img/24.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem porro impedit, perferendis similique voluptatum reiciendis laudantium iusto ad, eligendi non minus nemo tempora? Non velit ab quasi at dignissimos fugiat.</p>
               <p><a href="#" class="btn btn-primary">Learn More</a></p>
             </div>
@@ -310,43 +318,43 @@
               
               <div class="owl-carousel owl-carousel-fullwidth">
                 <div class="item">
-                  <a href="img/img_sq_1.jpg" class="image-popup">
-                    <img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/5.jpg" class="image-popup">
+                    <img src="img/5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
                 <div class="item">
-                  <a href="img/img_sq_2.jpg" class="image-popup">
-                    <img src="img/img_sq_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/6.jpg" class="image-popup">
+                    <img src="img/6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
                 <div class="item">
-                  <a href="img/img_sq_3.jpg" class="image-popup">
-                    <img src="img/img_sq_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/7.jpg" class="image-popup">
+                    <img src="img/7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
                 <div class="item">
-                  <a href="img/img_sq_4.jpg" class="image-popup">
-                    <img src="img/img_sq_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/8.jpg" class="image-popup">
+                    <img src="img/8.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
                 <div class="item">
-                  <a href="img/img_sq_5.jpg" class="image-popup">
-                    <img src="img/img_sq_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/9.jpg" class="image-popup">
+                    <img src="img/9.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
                 <div class="item">
-                  <a href="img/img_sq_6.jpg" class="image-popup">
-                    <img src="img/img_sq_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/10.jpg" class="image-popup">
+                    <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
                 <div class="item">
-                  <a href="img/img_sq_7.jpg" class="image-popup">
-                    <img src="img/img_sq_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <a href="img/10.jpg" class="image-popup">
+                    <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                   </a>
                 </div>
               </div>
 
-              <p class="text-center"><a href="#" class="btn btn-primary">View all gallery</a></p>
+              <p class="text-center"><a href="gallery.html" class="btn btn-primary">View all gallery</a></p>
 
             </div>
           </div>
@@ -354,8 +362,7 @@
       </section>
 
      <?php include 'footer.php';?>
-
-    <script data-cfasync="false" src="https://uicookies.com/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/scripts.min.js"></script>
+  <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
     

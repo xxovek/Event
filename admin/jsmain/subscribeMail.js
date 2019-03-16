@@ -1,7 +1,9 @@
 function subscribeMail(){
     var subscriberEmail = $('#subscriberEmail').val();
     if(subscriberEmail==""){
+        $('#subscriberEmail').focus()
         alert('Enter Email Id');
+
     }else{
         $.ajax({
             url:'admin/src/subscribeMail.php',

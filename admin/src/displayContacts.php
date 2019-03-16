@@ -10,6 +10,7 @@ if($result = mysqli_query($con,$sql)){
                 'name' => $row['name'],
                 'emailId' =>$row['emailId'],
                 'ContactNumber' => $row['ContactNumber'],
+                'message' => $row['msg'],
                 'created_at' => $row['created_at']
             ]);
         }
