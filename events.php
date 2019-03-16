@@ -35,94 +35,14 @@
       </section>
       <section class="probootstrap-section">
         <div class="container">
-          <div class="row mb40">
-            <div class="col-md-6 col-md-push-6 probootstrap-animate">
-              <p><img src="img/4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
-
-          <div class="row mb40">
-            <div class="col-md-6 probootstrap-animate">
-              <p><img src="img/26.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-push-1  news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Aliquam Consectetur Debitis Illum</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
-
-          <div class="row mb40">
-            <div class="col-md-6 col-md-push-6 probootstrap-animate">
-              <p><img src="img/21.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
-
-          <div class="row mb40">
-            <div class="col-md-6 probootstrap-animate">
-              <p><img src="img/22.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-push-1  news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Aliquam Consectetur Debitis Illum</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
-
-          <div class="row mb40">
-            <div class="col-md-6 col-md-push-6 probootstrap-animate">
-              <p><img src="img/23.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
-
-          <div class="row mb40">
-            <div class="col-md-6 probootstrap-animate">
-              <p><img src="img/24.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-push-1  news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Aliquam Consectetur Debitis Illum</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
-
-          <div class="row mb40">
-            <div class="col-md-6 col-md-push-6 probootstrap-animate">
-              <p><img src="img/25.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-            </div>
-            <div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate">
-              <h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2>
-              <p class="probootstrap-news-date">July 20, 2017 by Admin</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p>
-              <p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p>
-            </div>
-          </div>
+          <div class="eventData">
+        </div>
         </div>
       </section>
 <?php include 'footer.php';?>
 <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
+    <script src="admin/jsmain/Events.js"></script>
   </body>
 </html>
