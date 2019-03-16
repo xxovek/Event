@@ -7,7 +7,6 @@
     <title>Spica Global Arts &mdash; Event</title>
     <meta name="description" content="Free Bootstrap Theme by uicookies.com">
     <meta name="keywords" content="free website templates, free bootstrap themes, free template, free bootstrap, free website template">
-    
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700|Montserrat:300,400,700,900" rel="stylesheet">
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
@@ -27,7 +26,7 @@
             <div class="col-md-12">
               <div class="probootstrap-slider-text probootstrap-animate" data-animate-effect="fadeIn">
                 <h1 class="probootstrap-heading probootstrap-animate">Spica Global Arts <span>Together we can make a difference</span></h1>
-                <p class="probootstrap-animate"><a href="#" class="btn btn-primary btn-lg">Donate Now</a></p>
+                <p class="probootstrap-animate"><a href="events.php" class="btn btn-primary btn-lg">Buy Now</a></p>
               </div>
             </div>
           </div>
@@ -77,7 +76,7 @@
               <p class="lead">Sed a repudiandae impedit voluptate nam Deleniti dignissimos perspiciatis nostrum porro nesciunt</p>
             </div>
           </div>
-          <div class="row">
+          <div class="row upComingData">
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block probootstrap-cause">
                 <figure>
@@ -151,7 +150,7 @@
           </div>
           <div class="row">
             <div class="col-md-12">
-              <p>Save the future for the little children by donating. <a href="causes.html">See all causes</a></p>
+              <p>Save the future for the little children by donating. <a href="events.php">See all Events</a></p>
             </div>
           </div>
         </div>
@@ -247,14 +246,12 @@
                   </div>
                 </div>
                 <div class="item">
-
 <div class="probootstrap-testimony-wrap text-center">
   <figure>
     <img src="img/12.jpg" alt="Free Bootstrap Template by uicookies.com">
   </figure>
   <blockquote class="quote">&ldquo;Design must be functional and functionality must be translated into visual aesthetics, without any reliance on gimmicks that have to be explained.&rdquo; <cite class="author"> &mdash; <span>Mike Fisher</span></cite></blockquote>
 </div>
-
 </div>
                 <div class="item">
                   <div class="probootstrap-testimony-wrap text-center">
@@ -360,11 +357,10 @@
           </div>
         </div>
       </section>
-
-     <?php include 'footer.php';?>
-  <script src="js/scripts.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/custom.js"></script>
-    
-  </body>
+<?php include 'footer.php';?>
+<script src="js/scripts.min.js"></script>
+<script src="js/main.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="admin/jsmain/Events.js"></script>
+</body>
 </html>

@@ -1,9 +1,9 @@
 <?php 
 require('../config/connection.php');
 $response = [];
-$Limit = $_REQUEST['Limit'];
-$sql = "SELECT EventId,EventName,DATE_FORMAT(EventDate,'%b %d,%Y') AS EventDate,EventTime,Description,Venue,VenueCity,EventProfile,EventFlag
-  FROM Events WHERE EventFlag=1 ORDER BY EventDate DESC LIMIT $Limit";
+$EventId = $_GET['EventId'];
+$sql = "SELECT E.EventId,E.EventName,DATE_FORMAT(E.EventDate,'%b %d,%Y') AS EventDate,E.EventTime,E.Description,E.Venue,E.VenueCity,E.EventProfile,E.EventFlag,EG.pictures
+FROM Events E LEFT JOIN EventsGallary EG ON EG.EventId = E.EventId WHERE E.EventId=$EventId";
 if($result = mysqli_query($con,$sql)){
     if(mysqli_num_rows($result)>0){
         while($row=mysqli_fetch_array($result)){
@@ -16,7 +16,8 @@ if($result = mysqli_query($con,$sql)){
                 'Venue' => ucwords($row['Venue']),
                 'VenueCity' => ucwords($row['VenueCity']),
                 'EventProfile' => $row['EventProfile'],
-                'EventFlag' => $row['EventFlag']
+                'EventFlag' => $row['EventFlag'],
+                'Pictures' => $row['pictures']
             ]);
         }
     }else{
@@ -31,5 +32,5 @@ else{
     ]);
 }
 mysqli_close($con);
-exit(json_encode($response));
+print_r(json_encode($response));
 ?>
