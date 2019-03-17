@@ -40,6 +40,27 @@
       <section class="probootstrap-section">
         <div class="container">
          <div class="row probootstrap-gutter10">
+           <?php 
+           include 'admin/config/connection.php';
+           $EventId = $_REQUEST['EventId'];
+           $sql = "SELECT pictures FROM EventsGallary WHERE EventId=$EventId";
+           if($result = mysqli_query($con,$sql)){
+               if(mysqli_num_rows($result)>0){
+                   while($row=mysqli_fetch_array($result)){?>
+                   <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
+              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+            </div><?php 
+                   }
+               }else{?>
+                <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
+              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+            </div><?php          
+                   }
+           }
+           else{
+               
+           }
+           ?>
             <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
               <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
             </div>
@@ -95,7 +116,7 @@
     <script src="js/scripts.min.js"></script>
     <script src="js/main.min.js"></script>
     <script src="js/custom.js"></script>
-    <!-- <script src="admin/jsmain/Events.js"></script> -->
+    <script src="admin/jsmain/Events.js"></script>
     <script>
 EventeDetailsParticular();
 function EventeDetailsParticular(){
@@ -114,14 +135,13 @@ function EventeDetailsParticular(){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
               $('#abcd').css('background-image','url(img/4.jpg)');
-                for(var i=0;i<count;i++){
-                  if(response[i]['Pictures']=='NULL'){
-                  }else{
-                    $('.probootstrap-gutter10').append('<div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate" id="abc"><a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a></div>');
-                    $('#abc').addClass('fadeInUp probootstrap-animated');
-                  }
-                  
-                }
+                // for(var i=0;i<count;i++){
+                //   if(response[i]['Pictures']=='NULL'){
+                //   }else{
+                //     $('.probootstrap-gutter10').append('<div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate" id="abc"><a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a></div>');
+                //     $('#abc').addClass('fadeInUp probootstrap-animated');
+                //   }
+                // }
             }  
         },
         failure: function (response) {
