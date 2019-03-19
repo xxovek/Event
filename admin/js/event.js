@@ -12,8 +12,10 @@ var loadFile1 = function(event) {
 displayevents();
 // form_validation.init();
 function btnaddevent(){
+    $('#eveimg').hide();
   $("#eventmainform").show();
   $("#eventtable").hide();
+
   $("#updateeventmainform").hide();
 }
 // <button class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Edit" onclick="getRegId(21)"><i class="fa fa-edit"></i></button>
@@ -90,10 +92,59 @@ function EditEvent(param){
        $("#uvenue").val(response['Venue']);
        $("#uvenuecity").val(response['VenueCity']);
        $("#EventId").val(param);
+       $("#eventgallery").val(param);
        $("#updateimage").show();
-       $("#updateimage").html('<img src="./Events/'+response['EventProfile']+'" alt=""  width="110px" height="110px">')
+       var arr = response['EventProfile'].split(".");
+       $("#imageid").val(arr[0]);
+       $("#oldimagename").val(response['EventProfile']);
+       $("#updateimage").html('<img src="./Events/'+response['EventProfile']+'" alt=""  width="110px" height="110px">');
        $("#output1").hide();
+       EventGallery();
      }
+  });
+}
+function EventGallery(){
+  var param =  $("#EventId").val();
+  $("#eventgallerytbl").empty();
+  $.ajax({
+     type: "POST",
+     url: "./src/displayEventsGallery.php",
+     // dataType:"json",
+     data:({
+       EventId:param
+     }),
+     success: function(response) {
+        var html='';
+       var response = JSON.parse(response);
+        // alert(response);
+         var count= response.length;
+           for (var i = 0; i < count; i++) {
+           html+='<tr>';
+           html+='<th scope="row">'+(i+1)+'</th>';
+           html+='<td><img src="./EventGallery/'+response[i]['pictures']+'" alt=""  width="40px" height="40px"></td>';
+           html+='<td><button class="btn btn-danger" onclick="removeimage(\'' +response[i]['pictures'] + '\')"><i class="fa fa-remove"></i></button></td>';
+           html+='</tr>';
+        }
+        $("#eventgallerytbl").html(html);
+     }
+
+   });
+}
+function removeimage(param){
+
+  var name = param;
+  var eventgallery = $("#eventgallery").val();
+  // alert(eventgallery);
+  $.ajax({
+      type: 'POST',
+      url: './src/removeuploadevent.php',
+      data: {name: name,eventgallery:eventgallery},
+      success: function(data){
+           alert(data);
+          if(data){
+            EventGallery();
+          }
+      }
   });
 }
 function cancelreset(){
@@ -199,6 +250,7 @@ $('#eventform').on('submit',function(e){
                         $("#eventprofile").val("");
                         $("#eventmainform").hide();
                         $("#eventtable").show();
+                          $('#eveimg').hide();
                          displayevents();
                       }
                     });
@@ -222,6 +274,12 @@ $('#ueventform').on('submit',function(e){
   var venue = $("#uvenue").val();
   var venuecity = $("#uvenuecity").val();
   var eventprofile = $("#ueventprofile").val();
+  var oldimagename=$("#oldimagename").val();
+  if(eventprofile==""){
+    eventprofile="C:\\fakepath\\"+oldimagename;
+  }
+
+  // alert(eventprofile);
   if(eventname==""){
     $("#usmeventname").html("<font color='red'>Please Enter a Event Name</font>");
   }
@@ -276,10 +334,11 @@ $('#ueventform').on('submit',function(e){
                       data: new FormData(this),
                       success:function(data){
                         alert(data);
-                        $("#updateeventmainform").hide();
-                        $("#eventmainform").hide();
-                        $("#eventtable").show();
-                         displayevents();
+                        // $("#updateeventmainform").hide();
+                        // $("#eventmainform").hide();
+                        // $("#eventtable").show();
+                        //  displayevents();
+                        window.location.reload();
                       }
                     });
 

@@ -22,6 +22,9 @@
     <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href="dropzone/dropzone.css" rel="stylesheet" type="text/css">
+
+
     <link rel="stylesheet" href="datatables/CSS/buttons.bootstrap4.min.css" />
     <link rel="stylesheet" href="datatables/CSS/dataTables.bootstrap4.min.css" />
 
@@ -56,6 +59,11 @@
                           <div class="card-body">
                               <div class="form-validation">
                                   <form id="eventform"   method="post" enctype="multipart/form-data">
+                                      <div class="form-group row">
+                                        <div class="col-lg-12">
+                                          <h2>ADD NEW EVENT</h2>
+                                        </div>
+                                      </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Event Name <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
@@ -134,6 +142,11 @@
                           <div class="card-body">
                               <div class="form-validation">
                                   <form id="ueventform"   method="post" enctype="multipart/form-data">
+                                    <div class="form-group row">
+                                      <div class="col-lg-12">
+                                        <h2>UPDATE  EVENT</h2>
+                                      </div>
+                                    </div>
                                       <div class="form-group row">
                                           <label class="col-lg-4 col-form-label">Event Name <span class="text-danger">*</span></label>
                                           <div class="col-lg-6">
@@ -181,6 +194,8 @@
 
                                           <label class="col-lg-4 col-form-label">Event Profile <span class="text-danger">*</span></label>
                                            <div class="col-lg-6">
+                                              <input type="hidden" id="imageid" name="imageid"/>
+                                              <input type="hidden" id="oldimagename"/>
                                               <input type="file"  id="ueventprofile" name="eventprofile" accept="image/*" onchange="loadFile1(event)" >
                                               <span id="usmeventprofile" style="float:right;"></span>
                                           </div>
@@ -207,6 +222,47 @@
                           </div>
                       </div>
                   </div>
+                  <div class="col-lg-6">
+                    <div class="card">
+                        <div class="card-body">
+                          <label><h3>Event Gallary</h3></label>
+                          <div style="float:right">Please Upload the jpg ,jpeg image</div>
+                  <div class='content'>
+                  <form action="./src/uploadeventgallary.php" class="dropzone" id="myAwesomeDropzone">
+                  <input type="hidden" id="eventgallery" name="eventgallery" />
+                  </form>
+                  </div>
+                   </div>
+                   <div class="col-lg-12" style="padding-top:10px;">
+
+                             <div class="card-title">
+                                 <h4>Table Basic </h4>
+
+                             </div>
+                             <div class="card-body">
+                                 <div class="table-responsive">
+                                     <table class="table">
+                                         <thead>
+                                             <tr>
+                                                 <th>#</th>
+                                                 <th>Image Preview</th>
+                                                 <th>Action</th>
+
+                                             </tr>
+                                         </thead>
+                                         <tbody id="eventgallerytbl">
+
+
+
+                                         </tbody>
+                                     </table>
+                                 </div>
+                             </div>
+
+                     </div>
+                  </div>
+
+                </div>
               </div>
                 <div class="col-lg-12" id="eventtable">
                     <div class="card">
@@ -275,7 +331,30 @@
     <script src="datatables/buttons.colVis.min.js"></script>
 
     <script src="js/event.js"></script>
+      <script src="dropzone/dropzone.js" type="text/javascript"></script>
+    <script type='text/javascript'>
+    Dropzone.autoDiscover = false;
+    $(".dropzone").dropzone({
+        addRemoveLinks: true,
+        removedfile: function(file) {
+            var name = file.name;
+            var eventgallery = $("#eventgallery").val();
+            $.ajax({
+                type: 'POST',
+                url: './src/uploadeventgallary.php',
+                data: {name: name,eventgallery:eventgallery,request: 2},
+                sucess: function(data){
+                    console.log('success: ' + data);
+                }
+            });
+            var _ref;
+            return (_ref = file.previewElement) != null ? _ref.parentNode.removeChild(file.previewElement) : void 0;
+        }
+    });
+    </script>
+    <script>
 
+    </script>
 
 </body>
 </html>
