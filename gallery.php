@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel = "icon" href ="img/logo.png" type = "image/x-icon"> 
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
     <!-- <script src="js/jquery.min.js"></script> -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -40,7 +40,7 @@
       <section class="probootstrap-section">
         <div class="container">
          <div class="row probootstrap-gutter10">
-           <?php 
+           <?php
            include 'admin/config/connection.php';
            $EventId = $_REQUEST['EventId'];
            $sql = "SELECT pictures FROM EventsGallary WHERE EventId=$EventId";
@@ -49,16 +49,16 @@
                    while($row=mysqli_fetch_array($result)){?>
                    <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
               <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div><?php 
+            </div><?php
                    }
                }else{?>
                 <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
               <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div><?php          
+            </div><?php
                    }
            }
            else{
-               
+
            }
            ?>
             <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
@@ -128,7 +128,7 @@ function EventeDetailsParticular(){
         data:{EventId:EventId},
         dataType:'json',
         success:function(response){
-          var count = response.length; 
+          var count = response.length;
             if(response[0].msg==1){
             $('.row probootstrap-gutter10').html('<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;"><p><img src="img/4.jpg" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2><p class="probootstrap-news-date">July 20, 2017 by Admin</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p></div></div>');
             }else if(response[0].msg==0){
@@ -142,7 +142,7 @@ function EventeDetailsParticular(){
                 //     $('#abc').addClass('fadeInUp probootstrap-animated');
                 //   }
                 // }
-            }  
+            }
         },
         failure: function (response) {
             alert(response);

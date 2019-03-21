@@ -130,7 +130,7 @@
       params: {},
       clickable: true,
       ignoreHiddenFiles: true,
-      acceptedFiles: null,
+      acceptedFiles: ".jpg,.jpeg",
       acceptedMimeTypes: null,
       autoProcessQueue: true,
       autoQueue: true,
