@@ -49,22 +49,18 @@
                                         <!-- <label>Password</label> -->
                                         <input type="password"  id="password1" name="password1" class="form-control" placeholder="Password"   autocomplete="off" data-type="password" required>
                                     </div>
-                                    <input type="hidden" name="city" id="city"/>
-                                    <input type="hidden" name="state" id="state"/>
-                                    <input type="hidden" name="pincode" id="pincode"/>
+
                                     <div class="checkbox">
-                                        <label>
+                                        <!-- <label>
         										<input type="checkbox"> Remember Me
         									</label>
                                         <label class="pull-right">
         										<a href="forgot-password.php">Forgotten Password?</a>
-        									</label>
+        									</label> -->
 
                                     </div>
                                     <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
-                                    <div class="register-link m-t-15 text-center">
-                                        <p>Guest Login? <a href="guest_login.php"> Login Here</a></p>
-                                    </div>
+
                                     <div class="register-link m-t-15 text-center">
                                         <p>Don't have account ? <a href="register.php"> Sign Up Here</a></p>
                                     </div>
@@ -95,29 +91,12 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
-  // window.dataLayer = window.dataLayer || [];
-  // function gtag(){dataLayer.push(arguments);}
-  // gtag('js', new Date());
-  //
-  // gtag('config', 'UA-23581568-13');
 
   $(document).ready(function(){
-
-      $.getJSON("http://ipinfo.io", function (data) {
-          var city = data.city;
-          var state = data.region;
-          var pincode = data.postal;
-          $("#city").val(city);
-          $("#state").val(state);
-          $("#pincode").val(pincode);
-      });
-
-
-
   $('#login').on("submit", function(event){
   event.preventDefault();
    $.ajax({
-    url:"signin.php",
+    url:"./src/signin.php",
     async: false,
     cache: false,
     method:"POST",
@@ -125,24 +104,14 @@
     success:function(data){
         response = JSON.parse(data);
         if(response['success']){
-          window.location = 'dashboard.php';
-      }
-      else if(response['first']==='first') {
-          window.location = 'company_information.php';
-      }
-      else if (response['modal']==='modal') {
-        alert("DO THE PAYMENT FIRST TO ENJOY BENIFITS");
-          window.location = 'package_modal.php';
+          // alert(response['success']);
+           window.location = 'event.php';
       }
       else {
         var msg= "<div class='alert alert-success' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong><font color='red'> Please Enter Correct Username or password!</strong></font></div>";
           $('#msg').html(msg);
       }
-          window.setTimeout(function() {
-            $(".alert").fadeTo(500, 0).slideUp(500, function(){
-                $(this).remove();
-            });
-        }, 3000);
+
     }
    });
   });
