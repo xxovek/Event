@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16"> 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -80,7 +80,7 @@
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block probootstrap-cause">
                 <figure>
-                  <img src="img/2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
