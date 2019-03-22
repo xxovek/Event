@@ -39,7 +39,7 @@
                 </ul>
               </li> -->
 
-              <li class="probootstra-cta-button last"><a href="donate.html" class="btn btn-primary">Donate</a></li>
+              <!-- <li class="probootstra-cta-button last"><a href="donate.html" class="btn btn-primary">Donate</a></li> -->
             </ul>
           </div>
         </div>
