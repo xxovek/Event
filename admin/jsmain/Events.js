@@ -97,7 +97,7 @@ function displayUpcomingEvents(){
             }else{
                 for(var i=0;i<count;i++){
                     htmlData +='<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" id="pqr" data-animate-effect="fadeIn" style="visibility:visible;opacity:1;"><div class="probootstrap-image-text-block probootstrap-cause">';
-                    htmlData +='<figure><img src="img/2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></figure>';
+                    htmlData +='<figure><img src="admin/Events/600x303/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></figure>';
                     htmlData +='<div class="probootstrap-cause-inner"><div class="progress"><div class="progress-bar progress-bar-s2" data-percent="99"></div> </div>';
                     htmlData +='<div class="row mb30"><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$49,112</span></div><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$50,000</span></div></div>';            
                     htmlData +='<h2><a href="#">'+response[i]['EventName']+'</a></h2><div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>';

@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16"> 
-    <script src="js/jquery.min.js"></script>
+    <!-- <script src="js/jquery.min.js"></script> -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
       <script src="js/vendor/respond.min.js"></script>
@@ -77,10 +77,10 @@
             </div>
           </div>
           <div class="row upComingData">
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
+            <!-- <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block probootstrap-cause">
                 <figure>
-                  <img src="img/2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
@@ -99,8 +99,8 @@
                   <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
+            </div> -->
+            <!-- <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
                 <figure>
                   <img src="img/3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
@@ -122,12 +122,12 @@
                   <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="clearfix visible-sm-block visible-xs-block"></div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
                 <figure>
-                  <img src="img/4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
+                  <img src="img/4.jpg" alt="Spica Glpbal Arts" class="img-responsive">
                 </figure>
                 <div class="probootstrap-cause-inner">
                   <div class="progress">
@@ -165,6 +165,7 @@
           </div>
           <div class="row">
             <?php include 'admin/src/displayPastEvents.php';?>
+           
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
@@ -188,7 +189,6 @@
               </div>
             </div>
             <div class="col-md-3">
-
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
                   <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">

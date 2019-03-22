@@ -1,6 +1,6 @@
 <?php 
 require('admin/config/connection.php');
-$sql = "SELECT * FROM Events WHERE Events.EventDate < CURDATE() ORDER BY EventDate DESC LIMIT 5";
+$sql = "SELECT * FROM Events WHERE Events.EventDate < CURDATE() ORDER BY EventDate DESC LIMIT 4";
 if($result = mysqli_query($con,$sql)){
     if(mysqli_num_rows($result)>0){
         while($row=mysqli_fetch_array($result)){?>
@@ -16,11 +16,9 @@ if($result = mysqli_query($con,$sql)){
               </div>
             </div><?php
         }
-    }else{
-        
+    }else{       
     }
 }
-else{
-   
+else{  
 }
 ?>
