@@ -38,13 +38,12 @@ function displayevents() {
             else {
               EventFlag ='<button type="button" class="btn btn-info btn-rounded" onclick="InActiveEvent('+c_id+')">Active</button>';
             }
-            $("#tabledata").append('<tr><th scope="row">'+(i + 1)+'</th><td>'
-            +response[i].EventName+'</td><td>'
-            +response[i].EventDate+'</td><td>'
-            +response[i].EventTime+'</td><td>'
-            +response[i].Description+'</td><td>'
-            +response[i].Venue+'</td><td>'
-            +response[i].VenueCity+'</td><td style="text-align: center;">'+EventFlag+'</td><td style="text-align: center;"><div class="table-data-feature"><button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Edit" onclick="EditEvent('+c_id+')"><i class="fa fa-edit"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete" onclick="removeEvent('+c_id+')"><i class="fa fa-remove"></i></button></div></td></tr>');
+            $("#tabledata").append('<tr><th scope="row" style="font-size: 12px;">'+(i + 1)+'</th><td style="font-size: 12px;" >'
+            +response[i].EventName+'</td><td style="font-size: 12px;">'
+            +response[i].EventDate+'</td><td style="font-size: 12px;">'
+            +response[i].EventTime+'</td><td style="font-size: 12px;">'
+            +response[i].Venue+'</td><td style="font-size: 12px;">'
+            +response[i].VenueCity+'</td><td style="text-align: center;font-size: 12px;">'+EventFlag+'</td><td style="text-align: center;"><div class="table-data-feature"><button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Edit" onclick="EditEvent('+c_id+')"><i class="fa fa-edit"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete" onclick="removeEvent('+c_id+')"><i class="fa fa-remove"></i></button></div></td></tr>');
            }
         }
         $('#example1').DataTable({
@@ -52,7 +51,7 @@ function displayevents() {
         retrieve: true,
         bPaginate: $('tbody tr').length>10,
         order: [],
-        columnDefs: [ { orderable: false, targets: [0,1,2,3,4,5,6,7,8] } ],
+        columnDefs: [ { orderable: false, targets: [0,1,2,3,4,5,6,7] } ],
         dom: 'Bfrtip',
         buttons: ['copy','csv', 'excel', 'pdf'],
         destroy: true
@@ -148,9 +147,10 @@ function removeimage(param){
   });
 }
 function cancelreset(){
-  $("#eventmainform").hide();
-  $("#eventtable").show();
-  $("#updateeventmainform").hide();
+  // $("#eventmainform").hide();
+  // $("#eventtable").show();
+  // $("#updateeventmainform").hide();
+  window.location.reload();
 }
 function InActiveEvent(param){
   $.ajax({
@@ -174,7 +174,8 @@ function removeEvent(param){
      }),
      success:function(msg){
        alert(msg);
-       displayevents();
+       // displayevents();
+       window.location.reload();
      }
   });
 }

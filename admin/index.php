@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,19 +10,17 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
-    <title>Ela - Bootstrap Admin Dashboard Template</title>
+    <link rel="icon" type="image/png"  href="./images/logo.png">
+    <title>Login</title>
     <!-- Bootstrap Core CSS -->
     <link href="css/lib/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-
-    <link href="css/lib/calendar2/semantic.ui.min.css" rel="stylesheet">
-    <link href="css/lib/calendar2/pignose.calendar.min.css" rel="stylesheet">
-    <link href="css/lib/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/lib/owl.theme.default.min.css" rel="stylesheet" />
     <link href="css/helper.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="./js/lib/jquery/jquery.min.js"></script>
+
 </head>
+
 <body class="fix-header fix-sidebar">
     <!-- Preloader - style you can find in spinners.css -->
     <div class="preloader">
@@ -31,91 +29,39 @@
     </div>
     <!-- Main wrapper  -->
     <div id="main-wrapper">
-        <?php include "mainheader.php"; ?>
-        <?php include "mainleftsidebar.php"; ?>
-        <div class="page-wrapper">
-            <!-- Bread crumb -->
-            <!-- <div class="row page-titles">
-                <div class="col-md-5 align-self-center">
-                    <h3 class="text-primary">Dashboard</h3> </div>
-                <div class="col-md-7 align-self-center">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
-                    </ol>
-                </div>
-            </div> -->
-            <!-- End Bread crumb -->
-            <!-- Container fluid  -->
+
+        <div class="unix-login">
             <div class="container-fluid">
-                <!-- Start Page Content -->
-                <!-- <div class="row">
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-usd f-s-40 color-primary"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>568120</h2>
-                                    <p class="m-b-0">Total Revenue</p>
-                                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-4">
+                        <div class="login-content card" >
+                            <div class="login-form">
+                                <h4 style="color: blueviolet;font-size: xx-large;">Login</h4>
+                                <form id="login" method="post">
+                                  <span id="msg"></span>
+                                    <div class="form-group">
+                                        <!-- <label>Username</label> -->
+                                        <input type="text"  id="username1" name="username1" class="form-control" placeholder="Username" autocomplete="off" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <!-- <label>Password</label> -->
+                                        <input type="password"  id="password1" name="password1" class="form-control" placeholder="Password"   autocomplete="off" data-type="password" required>
+                                    </div>
+
+
+                                    <button type="submit" class="btn btn-primary btn-flat m-b-30 m-t-30">Sign in</button>
+
+                                    <!-- <div class="register-link m-t-15 text-center">
+                                        <p>Don't have account ? <a href="register.php"> Sign Up Here</a></p>
+                                    </div> -->
+                                </form>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-shopping-cart f-s-40 color-success"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>1178</h2>
-                                    <p class="m-b-0">Sales</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-archive f-s-40 color-warning"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>25</h2>
-                                    <p class="m-b-0">Stores</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="card p-30">
-                            <div class="media">
-                                <div class="media-left meida media-middle">
-                                    <span><i class="fa fa-user f-s-40 color-danger"></i></span>
-                                </div>
-                                <div class="media-body media-text-right">
-                                    <h2>847</h2>
-                                    <p class="m-b-0">Customer</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
-           <!-- <div class="row">
-						<div class="col-lg-6">
-							<div class="card">
-								<div class="card-body">
-									<div class="year-calendar"></div>
-								</div>
-							</div>
-						</div>
-            </div> -->
-                <!-- End PAge Content -->
+                </div>
             </div>
         </div>
-          <?php include "mainfooter.php"; ?>
+
     </div>
     <!-- End Wrapper -->
     <!-- All Jquery -->
@@ -130,31 +76,40 @@
     <!--stickey kit -->
     <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
     <!--Custom JavaScript -->
-
-
-    <!-- Amchart -->
-     <script src="js/lib/morris-chart/raphael-min.js"></script>
-    <script src="js/lib/morris-chart/morris.js"></script>
-    <script src="js/lib/morris-chart/dashboard1-init.js"></script>
-
-
-	<script src="js/lib/calendar-2/moment.latest.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/prism.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
-    <!-- scripit init-->
-    <script src="js/lib/calendar-2/pignose.init.js"></script>
-
-    <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
-    <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
-    <script src="js/scripts.js"></script>
-    <!-- scripit init-->
-
     <script src="js/custom.min.js"></script>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
 
+  $(document).ready(function(){
+  $('#login').on("submit", function(event){
+  event.preventDefault();
+   $.ajax({
+    url:"./src/signin.php",
+    async: false,
+    cache: false,
+    method:"POST",
+    data:$('#login').serialize(),
+    success:function(data){
+        response = JSON.parse(data);
+        if(response['success']){
+          // alert(response['success']);
+           window.location = 'event.php';
+      }
+      else {
+        var msg= "<div class='alert alert-success' role='alert'><button type='button' class='close' data-dismiss='alert' aria-label='Close'><span aria-hidden='true'>&times;</span></button><strong><font color='red'> Please Enter Correct Username or password!</strong></font></div>";
+          $('#msg').html(msg);
+      }
+
+    }
+   });
+  });
+
+});
+</script>
 </body>
+
+
+<!-- Mirrored from colorlib.com/polygon/elaadmin/form-layout.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 16 May 2018 06:46:34 GMT -->
 </html>

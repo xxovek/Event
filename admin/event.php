@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['u_uname'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -277,7 +281,7 @@
                           <th >Event Name</th>
                           <th >Event Date</th>
                           <th >Event Time</th>
-                          <th >Event Description</th>
+                          <!-- <th >Event Description</th> -->
                           <th >Event Venue</th>
                           <th >Venue City</th>
                           <th style="text-align: center;">Status</th>
@@ -358,3 +362,8 @@
 
 </body>
 </html>
+<?php
+}else {
+	header('Location:login.php');
+}
+?>

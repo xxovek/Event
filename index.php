@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16"> 
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16">
     <!-- <script src="js/jquery.min.js"></script> -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -91,10 +91,10 @@
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$49,112</span></div>
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$50,000</span></div>
                   </div>
-                  
+
                   <h2><a href="#">Help Children To Get Food</a></h2>
-                  <div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>  
-                  
+                  <div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>
+
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate quaerat maxime inventore.</p>
                   <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
                 </div>
@@ -114,10 +114,10 @@
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$28,127</span></div>
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$30,000</span></div>
                   </div>
-                  
+
                   <h2><a href="#">Help Children To Get Health</a></h2>
-                  <div class="probootstrap-date"><i class="icon-calendar"></i> 7 days remaining</div>  
-                  
+                  <div class="probootstrap-date"><i class="icon-calendar"></i> 7 days remaining</div>
+
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate quaerat maxime inventore.</p>
                   <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
                 </div>
@@ -138,10 +138,10 @@
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$21,973</span></div>
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$100,000</span></div>
                   </div>
-                  
+
                   <h2><a href="#">Help Children To Get Education</a></h2>
-                  <div class="probootstrap-date"><i class="icon-calendar"></i> 15 days remaining</div>  
-                  
+                  <div class="probootstrap-date"><i class="icon-calendar"></i> 15 days remaining</div>
+
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate quaerat maxime inventore.</p>
                   <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
                 </div>
@@ -165,7 +165,7 @@
           </div>
           <div class="row">
             <?php include 'admin/src/displayPastEvents.php';?>
-           
+
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
@@ -197,13 +197,13 @@
                   <h3>Jessa Sy</h3>
                   <p class="donated">Donated <span class="money">$400.00</span></p>
                 </div>
-              </div>  
+              </div>
 
             </div>
           </div>
         </div>
       </section>
-      
+
       <section class="probootstrap-section  probootstrap-section-colored">
         <div class="container">
           <div class="row">
@@ -221,7 +221,7 @@
           </div>
         </div>
       </section>
-        
+
       <section class="probootstrap-half">
         <div class="image">
           <div class="image-bg">
@@ -266,7 +266,7 @@
             </div>
             <div class="col-md-3 probootstrap-animate">
               <h3>Gallery</h3>
-              
+
               <div class="owl-carousel owl-carousel-fullwidth">
                 <div class="item">
                   <a href="img/5.jpg" class="image-popup">

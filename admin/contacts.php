@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['u_uname'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -94,3 +98,8 @@
      <script src="js/contact.js"></script>
 </body>
 </html>
+<?php
+}else {
+	header('Location:login.php');
+}
+?>

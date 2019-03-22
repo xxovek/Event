@@ -9,6 +9,8 @@ $name = $_REQUEST['name'];
 	$sql="DELETE FROM EventsGallary WHERE pictures='$name'";
   mysqli_query($con,$sql);
 	$response['msg'] = true;
+
+
 	$filename = $target_dir.$name;
 	$thumbname = $upload800x800_dir.$name;
   if (file_exists($filename)) {

@@ -36,8 +36,8 @@ var loadFile = function(event) {
             processData:false,
             success:function(data){
               alert(data);
-              $("#dshow").hide();
-              // window.location.reload();
+              window.location.reload();
+              displaysponsers();
             }
           })
       }
@@ -48,6 +48,9 @@ var loadFile = function(event) {
    $("#sponsermainform").show();
    $("#usponsermainform").hide();
    $("#sponsertable").hide();
+   $("#sponsername").val("");
+   $("#sponserdesc").val("");
+   $("#sponserprofile").val("");
  }
  function displaysponsers() {
    $("#tabledata").empty();
@@ -68,11 +71,11 @@ var loadFile = function(event) {
              else {
                EventFlag ='<button type="button" class="btn btn-info btn-rounded" onclick="InActiveSponser('+c_id+')">Active</button>';
              }
-             $("#tabledata").append('<tr><th scope="row">'+(i + 1)+'</th><td>'
-             +response[i].sponserName+'</td><td>'
-             +response[i].sponserDesc+'</td><td>'
-             +response[i].sponserProfile+'</td><td style="text-align: center;">'
-             +EventFlag+'</td><td style="text-align: center;"><div class="table-data-feature"><button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Edit" onclick="EditSponsers('+c_id+')"><i class="fa fa-edit"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete" onclick="removeSponsers('+c_id+')"><i class="fa fa-remove"></i></button></div></td></tr>');
+             $("#tabledata").append('<tr><th scope="row" style="font-size: 12px;">'+(i + 1)+'</th><td style="font-size: 12px;">'
+             +response[i].sponserName+'</td><td style="font-size: 12px;">'
+             +response[i].sponserDesc+'</td><td style="font-size: 12px;">'
+             +response[i].sponserProfile+'</td><td style="text-align: center;font-size: 12px;">'
+             +EventFlag+'</td><td style="text-align: center;font-size: 12px;"><div class="table-data-feature"><button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Edit" onclick="EditSponsers('+c_id+')"><i class="fa fa-edit"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete" onclick="removeSponsers('+c_id+')"><i class="fa fa-remove"></i></button></div></td></tr>');
          }
          }
 
@@ -99,7 +102,8 @@ function removeSponsers(param){
      }),
      success:function(msg){
        alert(msg);
-       displaysponsers();
+       window.location.reload();
+       // displaysponsers();
      }
   });
 }
@@ -143,8 +147,9 @@ function EditSponsers(param){
        var response = JSON.parse(msg);
        $("#usponsername").val(response['sponserName']);
        $("#usponserdesc").val(response['sponserDesc']);
-
-       $("#sponserId").val(param);
+       $("#oldimagename").val(response['sponserProfile']);
+       var arr = response['sponserProfile'].split(".");
+       $("#imageid").val(arr[0]);
        $("#updateimage").html('<img src="./sponsers/'+response['sponserProfile']+'" alt=""  width="110px" height="110px">')
        $("#output1").hide();
      }
@@ -161,6 +166,10 @@ $('#usponserform').on('submit',function(e){
   var sponsername = $("#usponsername").val();
   var sponserdesc = $("#usponserdesc").val();
   var sponserprofile = $("#usponserprofile").val();
+  var oldimagename=$("#oldimagename").val();
+  if(sponserprofile==""){
+    sponserprofile="C:\\fakepath\\"+oldimagename;
+  }
   if(sponsername==""){
   $("#umsponsername").html("<font color='red'>Enter a Sponsers Name..</font>");
   $("#usponsername").focus();
@@ -199,7 +208,8 @@ $('#usponserform').on('submit',function(e){
   }
 });
 function cancelreset(){
-  $("#sponsermainform").hide();
-  $("#usponsermainform").hide();
-  $("#sponsertable").show();
+  // $("#sponsermainform").hide();
+  // $("#usponsermainform").hide();
+  // $("#sponsertable").show();
+    window.location.reload();
 }

@@ -1,3 +1,7 @@
+<?php
+session_start();
+if(isset($_SESSION['u_uname'])){
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -149,6 +153,8 @@
                                          <div class="col-lg-6" >
                                         <img src="" alt="" id="output1" width="110px" height="110px">
                                          <span id="updateimage"></span>
+                                           <input type="hidden" id="imageid" name="imageid"/>
+                                           <input type="hidden" id="oldimagename"/>
                                       </div>
                                       </div>
 
@@ -204,25 +210,6 @@
     <script src="js/sidebarmenu.js"></script>
     <!--stickey kit -->
     <script src="js/lib/sticky-kit-master/dist/sticky-kit.min.js"></script>
-    <!--Custom JavaScript -->
-
-
-    <!-- Amchart -->
-     <!-- <script src="js/lib/morris-chart/raphael-min.js"></script>
-    <script src="js/lib/morris-chart/morris.js"></script>
-    <script src="js/lib/morris-chart/dashboard1-init.js"></script> -->
-
-
-	<!-- <script src="js/lib/calendar-2/moment.latest.min.js"></script>
-
-    <script src="js/lib/calendar-2/semantic.ui.min.js"></script>
-
-    <script src="js/lib/calendar-2/prism.min.js"></script>
-
-    <script src="js/lib/calendar-2/pignose.calendar.min.js"></script>
-
-    <script src="js/lib/calendar-2/pignose.init.js"></script> -->
-
     <script src="js/lib/owl-carousel/owl.carousel.min.js"></script>
     <script src="js/lib/owl-carousel/owl.carousel-init.js"></script>
     <script src="js/scripts.js"></script>
@@ -243,3 +230,8 @@
     <script src="js/sponser.js"></script>
 </body>
 </html>
+<?php
+}else {
+	header('Location:login.php');
+}
+?>
