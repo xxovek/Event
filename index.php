@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/styles-merged.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
-    <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16">
+    <link rel = "icon" href ="img/logo.png" type = "image/x-icon" sizes="16x16"> 
     <!-- <script src="js/jquery.min.js"></script> -->
     <!--[if lt IE 9]>
       <script src="js/vendor/html5shiv.min.js"></script>
@@ -77,56 +77,7 @@
             </div>
           </div>
           <div class="row upComingData">
-<<<<<<< HEAD
-            <!-- <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
-              <div class="probootstrap-image-text-block probootstrap-cause">
-                <figure>
-                  <img src="img/7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="probootstrap-cause-inner">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-s2" data-percent="99"></div>
-                  </div>
-
-                  <div class="row mb30">
-                    <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$49,112</span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$50,000</span></div>
-                  </div>
-
-                  <h2><a href="#">Help Children To Get Food</a></h2>
-                  <div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate quaerat maxime inventore.</p>
-                  <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
-                </div>
-              </div>
-            </div> -->
-            <!-- <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
-              <div class="probootstrap-image-text-block  probootstrap-cause">
-                <figure>
-                  <img src="img/3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="probootstrap-cause-inner">
-                  <div class="progress">
-                    <div class="progress-bar progress-bar-s2" data-percent="99"></div>
-                  </div>
-
-                  <div class="row mb30">
-                    <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$28,127</span></div>
-                    <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$30,000</span></div>
-                  </div>
-
-                  <h2><a href="#">Help Children To Get Health</a></h2>
-                  <div class="probootstrap-date"><i class="icon-calendar"></i> 7 days remaining</div>
-
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate quaerat maxime inventore.</p>
-                  <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
-                </div>
-              </div>
-            </div> -->
-=======
             
->>>>>>> d63f6970a0eac6d06745de56264418d5da2c3053
             <div class="clearfix visible-sm-block visible-xs-block"></div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
@@ -142,10 +93,10 @@
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$21,973</span></div>
                     <div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$100,000</span></div>
                   </div>
-
+                  
                   <h2><a href="#">Help Children To Get Education</a></h2>
-                  <div class="probootstrap-date"><i class="icon-calendar"></i> 15 days remaining</div>
-
+                  <div class="probootstrap-date"><i class="icon-calendar"></i> 15 days remaining</div>  
+                  
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro provident suscipit natus a cupiditate quaerat maxime inventore.</p>
                   <p><a href="#" class="btn btn-primary btn-black">Donate Now!</a></p>
                 </div>
@@ -169,48 +120,11 @@
           </div>
           <div class="row">
             <?php include 'admin/src/displayPastEvents.php';?>
-<<<<<<< HEAD
-
-            <div class="col-md-3">
-              <div class="probootstrap-donors text-center probootstrap-animate">
-                <figure class="media">
-                  <img src="img/11.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="text">
-                  <h3>Chris Worth</h3>
-                  <p class="donated">Donated <span class="money">$1,500.00</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="probootstrap-donors text-center probootstrap-animate">
-                <figure class="media">
-                  <img src="img/12.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="text">
-                  <h3>Janet Morris</h3>
-                  <p class="donated">Donated <span class="money">$250.00</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="probootstrap-donors text-center probootstrap-animate">
-                <figure class="media">
-                  <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="text">
-                  <h3>Jessa Sy</h3>
-                  <p class="donated">Donated <span class="money">$400.00</span></p>
-                </div>
-              </div>
-
-=======
->>>>>>> d63f6970a0eac6d06745de56264418d5da2c3053
             </div>
           </div>
         </div>
       </section>
-
+      
       <section class="probootstrap-section  probootstrap-section-colored">
         <div class="container">
           <div class="row">
@@ -228,7 +142,7 @@
           </div>
         </div>
       </section>
-
+        
       <section class="probootstrap-half">
         <div class="image">
           <div class="image-bg">
@@ -272,12 +186,7 @@
               <p><a href="about.php" class="btn btn-primary">Learn More</a></p>
             </div>
             <div class="col-md-3 probootstrap-animate">
-<<<<<<< HEAD
-              <h3>Gallery</h3>
-
-=======
               <h3>Gallery</h3> 
->>>>>>> d63f6970a0eac6d06745de56264418d5da2c3053
               <div class="owl-carousel owl-carousel-fullwidth">
                 <?php include 'admin/src/getGalleryImagesForHome.php';?>
               </div>
