@@ -26,7 +26,7 @@
             <div class="col-md-12">
               <div class="probootstrap-slider-text probootstrap-animate" data-animate-effect="fadeIn">
                 <h1 class="probootstrap-heading probootstrap-animate">Spica Global Arts <span>Together we can make a difference</span></h1>
-                <p class="probootstrap-animate"><a href="events.php" class="btn btn-primary btn-lg">Buy Now</a></p>
+                <!-- <p class="probootstrap-animate"><a href="events.php" class="btn btn-primary btn-lg">Buy Now</a></p> -->
               </div>
             </div>
           </div>
@@ -77,6 +77,7 @@
             </div>
           </div>
           <div class="row upComingData">
+<<<<<<< HEAD
             <!-- <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block probootstrap-cause">
                 <figure>
@@ -123,6 +124,9 @@
                 </div>
               </div>
             </div> -->
+=======
+            
+>>>>>>> d63f6970a0eac6d06745de56264418d5da2c3053
             <div class="clearfix visible-sm-block visible-xs-block"></div>
             <div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" data-animate-effect="fadeIn">
               <div class="probootstrap-image-text-block  probootstrap-cause">
@@ -165,6 +169,7 @@
           </div>
           <div class="row">
             <?php include 'admin/src/displayPastEvents.php';?>
+<<<<<<< HEAD
 
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
@@ -199,6 +204,8 @@
                 </div>
               </div>
 
+=======
+>>>>>>> d63f6970a0eac6d06745de56264418d5da2c3053
             </div>
           </div>
         </div>
@@ -214,9 +221,9 @@
           </div>
           <div class="row">
             <div class="col-md-12 probootstrap-animate">
-              <div class="owl-carousel owl-carousel-testimony owl-carousel-fullwidth sponsersData">
-                <?php include 'admin/src/displaySponsersOnSite.php'; ?>
-                </div>
+              <div class="owl-carousel owl-carousel-testimony owl-carousel-fullwidth">
+                <?php include 'admin/src/displaySponsersOnSite.php';?>
+              </div>
             </div>
           </div>
         </div>
@@ -236,7 +243,6 @@
           </div>
         </div>
       </section>
-
       <section class="probootstrap-section">
         <div class="container">
           <div class="row">
@@ -260,53 +266,22 @@
             </div>
             <div class="col-md-6 probootstrap-animate">
               <h3>About Us</h3>
-              <p><img src="img/24.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem porro impedit, perferendis similique voluptatum reiciendis laudantium iusto ad, eligendi non minus nemo tempora? Non velit ab quasi at dignissimos fugiat.</p>
-              <p><a href="#" class="btn btn-primary">Learn More</a></p>
+              <p><img src="img/2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></p>
+              <p>Spica Global Arts mission is to promote Indian classical art form in San Diego and suppor charitable organizations worldwide.
+              Our vision is to provide an opportunity for the future generation to be able to stay connected to their rich cultural heritage</p>
+              <p><a href="about.php" class="btn btn-primary">Learn More</a></p>
             </div>
             <div class="col-md-3 probootstrap-animate">
+<<<<<<< HEAD
               <h3>Gallery</h3>
 
+=======
+              <h3>Gallery</h3> 
+>>>>>>> d63f6970a0eac6d06745de56264418d5da2c3053
               <div class="owl-carousel owl-carousel-fullwidth">
-                <div class="item">
-                  <a href="img/5.jpg" class="image-popup">
-                    <img src="img/5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="img/6.jpg" class="image-popup">
-                    <img src="img/6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="img/7.jpg" class="image-popup">
-                    <img src="img/7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="img/8.jpg" class="image-popup">
-                    <img src="img/8.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="img/9.jpg" class="image-popup">
-                    <img src="img/9.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="img/10.jpg" class="image-popup">
-                    <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
-                <div class="item">
-                  <a href="img/10.jpg" class="image-popup">
-                    <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                  </a>
-                </div>
+                <?php include 'admin/src/getGalleryImagesForHome.php';?>
               </div>
-
-              <p class="text-center"><a href="gallery.html" class="btn btn-primary">View all gallery</a></p>
-
+              <p class="text-center"><a href="GeneralGallery.php" class="btn btn-primary">View all gallery</a></p>
             </div>
           </div>
         </div>
@@ -316,6 +291,5 @@
 <script src="js/main.min.js"></script>
 <script src="js/custom.js"></script>
 <script src="admin/jsmain/Events.js"></script>
-<!-- <script src="admin/jsmain/sponsers.js"></script> -->
 </body>
 </html>

@@ -12,11 +12,6 @@
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel = "icon" href ="img/logo.png" type = "image/x-icon">
-    <!-- <script src="js/jquery.min.js"></script> -->
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 <?php include 'navbar.php';?>
@@ -26,6 +21,7 @@
             <div class="col-md-12">
               <div class="probootstrap-slider-text probootstrap-animate" data-animate-effect="fadeIn">
                 <h1 class="probootstrap-heading probootstrap-animate">Our Gallery <span>Together we can make a difference</span></h1>
+                <p class="probootstrap-animate"><a href="#" class="btn btn-primary btn-lg">Buy Ticket Now</a></p>
               </div>
             </div>
           </div>
@@ -48,7 +44,7 @@
                if(mysqli_num_rows($result)>0){
                    while($row=mysqli_fetch_array($result)){?>
                    <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
+              <a href="admin/EventGallery/800x800/<?php echo $row['pictures'];?>" class="image-popup"><img src="admin/EventGallery/800x800/<?php echo $row['pictures'];?>" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
             </div><?php
                    }
                }else{?>
@@ -61,54 +57,6 @@
 
            }
            ?>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_2.jpg" class="image-popup"><img src="img/img_sq_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_3.jpg" class="image-popup"><img src="img/img_sq_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_4.jpg" class="image-popup"><img src="img/img_sq_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_5.jpg" class="image-popup"><img src="img/img_sq_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_6.jpg" class="image-popup"><img src="img/img_sq_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_7.jpg" class="image-popup"><img src="img/img_sq_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_2.jpg" class="image-popup"><img src="img/img_sq_2.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_3.jpg" class="image-popup"><img src="img/img_sq_3.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_4.jpg" class="image-popup"><img src="img/img_sq_4.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_5.jpg" class="image-popup"><img src="img/img_sq_5.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_6.jpg" class="image-popup"><img src="img/img_sq_6.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_7.jpg" class="image-popup"><img src="img/img_sq_7.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
-            <div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate">
-              <a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a>
-            </div>
           </div>
         </div>
       </section>
@@ -134,14 +82,7 @@ function EventeDetailsParticular(){
             }else if(response[0].msg==0){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
-              $('#abcd').css('background-image','url(img/4.jpg)');
-                // for(var i=0;i<count;i++){
-                //   if(response[i]['Pictures']=='NULL'){
-                //   }else{
-                //     $('.probootstrap-gutter10').append('<div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate" id="abc"><a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a></div>');
-                //     $('#abc').addClass('fadeInUp probootstrap-animated');
-                //   }
-                // }
+              $('#abcd').css('background-image','url(admin/Events/1900x960/'+response[0]['EventProfile']+')');
             }
         },
         failure: function (response) {

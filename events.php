@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
 <head>
@@ -15,10 +14,6 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel = "icon" href ="img/logo.png" type = "image/x-icon"> 
     <script src="js/jquery.min.js"></script>
-    <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 <?php include 'navbar.php';?>
