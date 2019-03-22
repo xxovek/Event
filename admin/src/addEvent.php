@@ -1,6 +1,7 @@
 <?php
 require '../config/connection.php';
 include_once("functions.php");
+  ini_set('memory_limit', '1024M'); 
 $EventName      = $_POST['EventName'];
 $EventDate      = $_POST['EventDate'];
 $EventTime      = $_POST['EventTime'];

@@ -1,5 +1,6 @@
 <?php
 require '../config/connection.php';
+ini_set('memory_limit','1024M');
 $target_dir = "../EventGallery/"; // Upload directory
 $upload800x800_dir = '../EventGallery/800x800/';
 $thumb_width = 800;
