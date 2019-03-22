@@ -16,7 +16,7 @@
               <li class="active"><a href="index.php">Home</a></li>
               <li><a href="about.php">About Us</a></li>
               <li><a href="events.php">Events</a></li>
-              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="GeneralGallery.php">Gallery</a></li>
               <li><a href="contact.php">Contact us</a></li>
               <!-- <li class="dropdown">
                 <a href="#" data-toggle="dropdown" class="dropdown-toggle">Pages</a>
@@ -48,13 +48,10 @@
 
       <script type="text/javascript">
       $('li').removeClass('active');
-
         var regex = /[A-Za-z _]+.php/g;
         var input = location.pathname;
         if(regex.test(input)) {
            var matches = input.match(regex);
-        //   $('a[href="'+matches[0]+'"]').closest('li').addClass('treeview active');
            $('a[href="'+matches[0]+'"]').closest('li').addClass('active');
         }
-
       </script>

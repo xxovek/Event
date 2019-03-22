@@ -165,28 +165,7 @@
           </div>
           <div class="row">
             <?php include 'admin/src/displayPastEvents.php';?>
-            <div class="col-md-3">
-              <div class="probootstrap-donors text-center probootstrap-animate">
-                <figure class="media">
-                  <img src="img/11.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="text">
-                  <h3>Chris Worth</h3>
-                  <p class="donated">Donated <span class="money">$1,500.00</span></p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-3">
-              <div class="probootstrap-donors text-center probootstrap-animate">
-                <figure class="media">
-                  <img src="img/11.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
-                </figure>
-                <div class="text">
-                  <h3>Chris Worth</h3>
-                  <p class="donated">Donated <span class="money">$1,500.00</span></p>
-                </div>
-              </div>
-            </div>
+           
             <div class="col-md-3">
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
@@ -210,7 +189,6 @@
               </div>
             </div>
             <div class="col-md-3">
-
               <div class="probootstrap-donors text-center probootstrap-animate">
                 <figure class="media">
                   <img src="img/10.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive">
