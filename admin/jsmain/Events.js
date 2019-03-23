@@ -55,7 +55,7 @@ function removeEvent(EventId){
 displayEventsOnSite();
 function displayEventsOnSite(){
     $.ajax({
-        url:'admin/src/displayEventsOnSite.php',
+        url:'admin/src/displayAllEventsOnSite.php',
         type:'GET',
         data:({Limit:'6'}),
         dataType:'json',
@@ -67,10 +67,11 @@ function displayEventsOnSite(){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
                 for(var i=0;i<count;i++){
+                    // alert(i);
                     if(i%2==0){
-                        $('.eventData').append('<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;"><p><img src="admin/Events/800x800/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#" onClick="EventDetails('+response[i]['EventId']+')">'+response[i]['EventName']+'</a></h2><p class="probootstrap-news-date">'+response[i]['EventDate']+' At '+response[i]['Venue']+'</p><p>'+response[i]['Description']+' </p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="gallery.php?EventId='+response[i]['EventId']+'"  class="btn btn-black">Read More...</a></p></div></div>');
+                        $('.eventData').append('<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;"><p><img src="admin/Events/800x800/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#" onClick="EventDetails('+response[i]['EventId']+')">'+response[i]['EventName']+'</a></h2><p class="probootstrap-news-date">Event Date:'+response[i]['EventDate']+'<br> At '+response[i]['Venue']+'</p><p class="money">'+response[i]['VenueCity']+' </p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="gallery.php?EventId='+response[i]['EventId']+'"  class="btn btn-black">Read More...</a></p></div></div>');
                     }else{
-                        $('.eventData').append('<div class="row mb40"><div class="col-md-6 probootstrap-animate"  style="visibility:visible;opacity:1;"><p><img src="admin/Events/800x800/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-push-1  news-entry probootstrap-animate"  style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#" onClick="EventDetails('+response[i]['EventId']+')">'+response[i]['EventName']+'</a></h2><p class="probootstrap-news-date">'+response[i]['EventDate']+' At '+response[i]['Venue']+'</p><p>'+response[i]['Description']+' </p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="gallery.php?EventId='+response[i]['EventId']+'" class="btn btn-black">Read More...</a></p></div></div>');
+                        $('.eventData').append('<div class="row mb40"><div class="col-md-6 probootstrap-animate"  style="visibility:visible;opacity:1;"><p><img src="admin/Events/800x800/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-push-1  news-entry probootstrap-animate"  style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#" onClick="EventDetails('+response[i]['EventId']+')">'+response[i]['EventName']+'</a></h2><p class="probootstrap-news-date">'+response[i]['EventDate']+' At '+response[i]['Venue']+'</p><p class="money">'+response[i]['VenueCity']+' </p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="gallery.php?EventId='+response[i]['EventId']+'" class="btn btn-black">Read More...</a></p></div></div>');
                     }
                 }
             }  
@@ -80,6 +81,7 @@ function displayEventsOnSite(){
 function EventDetails(EventId){
     window.location.href="gallery.php?EventId="+EventId;
 }
+
 displayUpcomingEvents();
 function displayUpcomingEvents(){
     var htmlData = '';
@@ -96,12 +98,13 @@ function displayUpcomingEvents(){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
                 for(var i=0;i<count;i++){
+                   
                     htmlData +='<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" id="pqr" data-animate-effect="fadeIn" style="visibility:visible;opacity:1;"><div class="probootstrap-image-text-block probootstrap-cause">';
                     htmlData +='<figure><img src="admin/Events/600x303/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></figure>';
-                    htmlData +='<div class="probootstrap-cause-inner"><div class="progress"><div class="progress-bar progress-bar-s2" data-percent="99"></div> </div>';
-                    htmlData +='<div class="row mb30"><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Raised: <span class="money">$49,112</span></div><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Goal: <span class="money">$50,000</span></div></div>';            
-                    htmlData +='<h2><a href="#">'+response[i]['EventName']+'</a></h2><div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>';
-                    htmlData +='<p>'+response[i]['Description']+'</p><p><a href="#" class="btn btn-primary btn-black">Buy Now!</a></p></div></div></div>';
+                    htmlData +='<div class="probootstrap-cause-inner">';
+                    htmlData +='<div class="row mb30"><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Date: <span class="money" style="font-size:18px;">'+response[i]['EventDate']+'</span></div><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Venue City: <span class="money" style="font-size:18px;">'+response[i]['VenueCity']+'</span></div></div>';            
+                    htmlData +='<h2><a href="gallery.php?EventId='+response[i]['EventId']+'">'+response[i]['EventName']+'</a></h2><div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>';
+                    htmlData +='<p>Venue:'+response[i]['Venue']+'</p><p><a href="#" class="btn btn-primary btn-black">Buy Now!</a></p></div></div></div>';
                     $('#pqr').addClass('fadeInUp probootstrap-animated');
                 }
                 $('.upComingData').html(htmlData);

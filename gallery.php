@@ -20,7 +20,7 @@
           <div class="row">
             <div class="col-md-12">
               <div class="probootstrap-slider-text probootstrap-animate" data-animate-effect="fadeIn">
-                <h1 class="probootstrap-heading probootstrap-animate">Our Gallery <span>Together we can make a difference</span></h1>
+                <h1 class="probootstrap-heading probootstrap-animate"><strong id="nameOfEvent">vikas</strong><span>Together we can make a difference</span></h1>
                 <p class="probootstrap-animate"><a href="#" class="btn btn-primary btn-lg">Buy Ticket Now</a></p>
               </div>
             </div>
@@ -83,6 +83,7 @@ function EventeDetailsParticular(){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
               $('#abcd').css('background-image','url(admin/Events/1900x960/'+response[0]['EventProfile']+')');
+              $('#nameOfEvent').text(response[0]['EventName']);
             }
         },
         failure: function (response) {

@@ -11,7 +11,7 @@ if($result = mysqli_query($con,$sql)){
                 </figure>
                 <div class="text">
                   <h3><a href="gallery.php?EventId=<?php echo $row['EventId'];?>"><?php echo ucwords($row['EventName']);?></a></h3>
-                  <p class="donated"><?php echo $row['Venue'];?> <span class="money"><?php echo $row['VenueCity'];?></span></p>
+                  <p class="donated"><?php echo $row['Venue'];?> <span class="money" style="font-size:18px;"><?php echo $row['VenueCity'];?></span></p>
                 </div>
               </div>
             </div><?php
