@@ -29,7 +29,7 @@
       </section>
       <section class="probootstrap-section">
         <div class="container">
-          <div class="eventData">
+          <div class="eventData1">
         </div>
         </div>
       </section>
@@ -67,9 +67,39 @@
     <script src="admin/jsmain/Events.js"></script>
     <script>
 EventeDetailsParticular();
+displayEventbyID();
+function displayEventbyID(){
+    var EventId = '<?php echo $_REQUEST['EventId'];?>';
+    // alert(EventId);
+    $.ajax({
+        url:'admin/src/displayAllEventsOnSiteById.php',
+        type:'GET',
+        data:({EventId:EventId}),
+        dataType:'json',
+        success:function(response){
+            var count = response.length;
+            var ehtml ='';
+                for(var i=0;i<count;i++){
+                     ehtml+='<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;">';
+                     ehtml+='<p><img src="admin/Events/800x800/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></p>';
+                     ehtml+='</div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;">';
+                     ehtml+='<h2 class="mb0"><a href="#" onClick="EventDetails('+response[i]['EventId']+')">'+response[i]['EventName']+'</a>';
+                     ehtml+='</h2><p class="probootstrap-news-date" style="color: brown;font-weight: bold;">Event Date:'+response[i]['EventDate']+'<br> Event Location: '+response[i]['Venue']+'</p>';
+                    ehtml +='<p class="" style="color:#a69e2a;font-weight: bold;font-size: small;">Event Detail:<br> At '+response[i]['Description']+'</p>';
+                     ehtml+='<p class="money" style="color:#2f0e8f;font-weight: bold;font-size: medium;"> Venue City:  '+response[i]['VenueCity']+'</br> Time:  '+response[i]['EventTime']+' </p>';
+                     // ehtml+='<p class="money" style="color:#2f0e8f;font-weight: bold;font-size: medium;"> Time:  '+response[i]['EventTime']+' </p>';
+// ehtml+='<p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span>';
+                     // ehtml+='<a href="gallery.php?EventId='+response[i]['EventId']+'"  class="btn btn-black">Read More...</a></p>';
+                     ehtml+='</div></div>';
+
+                    }
+                    $('.eventData1').append(ehtml);
+                }
+    });
+}
 function EventeDetailsParticular(){
   var EventId = '<?php echo $_REQUEST['EventId'];?>';
-  // $('.probootstrap-gutter10').append('<div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate" id="abc"><a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a></div>');                
+  // $('.probootstrap-gutter10').append('<div class="col-md-3 col-sm-4 col-xs-6 gal-item probootstrap-animate" id="abc"><a href="img/img_sq_1.jpg" class="image-popup"><img src="img/img_sq_1.jpg" alt="Free Bootstrap Template by uicookies.com" class="img-responsive"></a></div>');
   $.ajax({
         url:'admin/src/displayEventDescription.php',
         type:'GET',

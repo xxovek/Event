@@ -36,7 +36,7 @@ function displayEvents(){
         success:function(response){
             var count = response.length;
             for(var i=0;i<count;i++){
-                
+
             }
         }
     });
@@ -53,6 +53,7 @@ function removeEvent(EventId){
     });
 }
 displayEventsOnSite();
+
 function displayEventsOnSite(){
     $.ajax({
         url:'admin/src/displayAllEventsOnSite.php',
@@ -62,7 +63,8 @@ function displayEventsOnSite(){
         success:function(response){
             var count = response.length; 
             if(response[0].msg==1){
-            $('.eventData').html('<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;"><p><img src="img/4.jpg" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2><p class="probootstrap-news-date">July 20, 2017 by Admin</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p></div></div>');
+            $('.eventData').html('<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;"><p><img src="img/4.jpg" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2><p class="probootstrap-news-date">July 20, 2017 by Admin</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p></div></div>'
+          );
             }else if(response[0].msg==0){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
@@ -74,7 +76,7 @@ function displayEventsOnSite(){
                         $('.eventData').append('<div class="row mb40"><div class="col-md-6 probootstrap-animate"  style="visibility:visible;opacity:1;"><p><img src="admin/Events/800x800/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-push-1  news-entry probootstrap-animate"  style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#" onClick="EventDetails('+response[i]['EventId']+')">'+response[i]['EventName']+'</a></h2><p class="probootstrap-news-date">'+response[i]['EventDate']+' At '+response[i]['Venue']+'</p><p class="money">'+response[i]['VenueCity']+' </p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="gallery.php?EventId='+response[i]['EventId']+'" class="btn btn-black">Read More...</a></p></div></div>');
                     }
                 }
-            }  
+            }
         }
     });
 }
@@ -91,24 +93,24 @@ function displayUpcomingEvents(){
         data:({Limit:'3'}),
         dataType:'json',
         success:function(response){
-            var count = response.length; 
+            var count = response.length;
             if(response[0].msg==1){
             $('.upComingData').html('<div class="row mb40"><div class="col-md-6 col-md-push-6 probootstrap-animate" style="visibility:visible;opacity:1;"><p><img src="img/4.jpg" alt="Spica Global Arts" class="img-responsive"></p></div><div class="col-md-5 col-md-pull-6 news-entry probootstrap-animate" style="visibility:visible;opacity:1;"><h2 class="mb0"><a href="#">Consectetur Adipisicing Elit</a></h2><p class="probootstrap-news-date">July 20, 2017 by Admin</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur sunt excepturi dicta ex, placeat ab esse, iure harum eaque fuga asperiores distinctio amet temporibus enim illum molestiae neque ad similique possimus repellendus velit! Quaerat nihil nemo, aliquam consectetur debitis illum. Excepturi cum, quaerat minus odit dolorem recusandae, debitis reprehenderit voluptate?</p><p><span class="probootstrap-meta-share"><a href="#"><i class="icon-redo2"></i> 14</a> <a href="#"><i class="icon-bubbles2"></i> 7</a></span> <a href="#" class="btn btn-black">Read More...</a></p></div></div>');
             }else if(response[0].msg==0){
                 alert('Error While Connecting Server Please try Again Later');
             }else{
                 for(var i=0;i<count;i++){
-                   
+
                     htmlData +='<div class="col-md-4 col-sm-6 col-xs-6 col-xxs-12 probootstrap-animate" id="pqr" data-animate-effect="fadeIn" style="visibility:visible;opacity:1;"><div class="probootstrap-image-text-block probootstrap-cause">';
                     htmlData +='<figure><img src="admin/Events/600x303/'+response[i]['EventProfile']+'" alt="Spica Global Arts" class="img-responsive"></figure>';
                     htmlData +='<div class="probootstrap-cause-inner">';
-                    htmlData +='<div class="row mb30"><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Date: <span class="money" style="font-size:18px;">'+response[i]['EventDate']+'</span></div><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Venue City: <span class="money" style="font-size:18px;">'+response[i]['VenueCity']+'</span></div></div>';            
+                    htmlData +='<div class="row mb30"><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-raised">Date: <span class="money" style="font-size:18px;">'+response[i]['EventDate']+'</span></div><div class="col-md-6 col-sm-6 col-xs-6 probootstrap-goal">Venue City: <span class="money" style="font-size:18px;">'+response[i]['VenueCity']+'</span></div></div>';
                     htmlData +='<h2><a href="gallery.php?EventId='+response[i]['EventId']+'">'+response[i]['EventName']+'</a></h2><div class="probootstrap-date"><i class="icon-calendar"></i> 2 hours remaining</div>';
                     htmlData +='<p>Venue:'+response[i]['Venue']+'</p><p><a href="#" class="btn btn-primary btn-black">Buy Now!</a></p></div></div></div>';
                     $('#pqr').addClass('fadeInUp probootstrap-animated');
                 }
                 $('.upComingData').html(htmlData);
-            }  
+            }
         }
     });
 }
