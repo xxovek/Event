@@ -43,7 +43,7 @@ function displayevents() {
             +response[i].EventDate+'</td><td style="font-size: 12px;">'
             +response[i].EventTime+'</td><td style="font-size: 12px;">'
             +response[i].Venue+'</td><td style="font-size: 12px;">'
-            +response[i].VenueCity+'</td><td style="text-align: center;font-size: 12px;">'+EventFlag+'</td><td style="text-align: center;"><div class="table-data-feature"><button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Edit" onclick="EditEvent('+c_id+')"><i class="fa fa-edit"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete" onclick="removeEvent('+c_id+')"><i class="fa fa-remove"></i></button></div></td></tr>');
+            +response[i].VenueCity+'</td><td style="text-align: center;font-size: 12px;">'+EventFlag+'</td><td style="text-align: center;"><div class="table-data-feature"><button class="btn btn-secondary" data-toggle="tooltip" style="background-color: gold;" data-placement="top" title="Send Mail" onclick="SendMailEvent('+c_id+')"><i class="fa fa-envelope"></i></button><button class="btn btn-success" data-toggle="tooltip" data-placement="top" title="Edit" onclick="EditEvent('+c_id+')"><i class="fa fa-edit"></i></button><button class="btn btn-danger" data-toggle="tooltip" data-placement="top" title="Delete" onclick="removeEvent('+c_id+')"><i class="fa fa-remove"></i></button></div></td></tr>');
            }
         }
         $('#example1').DataTable({
@@ -58,6 +58,20 @@ function displayevents() {
         });
 
       }
+  });
+}
+function SendMailEvent(param){
+    alert(param);
+  $.ajax({
+     type:"POST",
+     url:"./src/sendmail.php",
+     data:({
+       EventId:param
+     }),
+     success:function(msg){
+       alert(msg);
+    //   displayevents();
+     }
   });
 }
 function ActiveEvent(param){
