@@ -61,7 +61,7 @@ function displayevents() {
   });
 }
 function SendMailEvent(param){
-    alert(param);
+    // alert(param);
   $.ajax({
      type:"POST",
      url:"./src/sendmail.php",
