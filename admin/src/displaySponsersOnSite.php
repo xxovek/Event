@@ -8,7 +8,7 @@ if($result = mysqli_query($con,$sql) or die(mysqli_error($con))){
         <div class="item">
   <div class="probootstrap-testimony-wrap text-center">
     <figure>
-      <img src="img/12.jpg" alt="Spica Global Arts">
+      <img src="admin/sponsers/<?php echo $row['sponserProfile'];?>" alt="Spica Global Arts">
     </figure>
     <blockquote class="quote">&ldquo;<?php echo $row['sponserDesc'];?>&rdquo; <cite class="author"> &mdash; <span><?php echo $row['sponserName'];?></span></cite></blockquote>
   </div>
