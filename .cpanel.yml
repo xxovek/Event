@@ -2,4 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/user/public_html/vikas
-    - /bin/cp Event $DEPLOYPATH
+    - /bin/cp -R Event $DEPLOYPATH
